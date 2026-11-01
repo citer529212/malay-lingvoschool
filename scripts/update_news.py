@@ -1,0 +1,24 @@
+import json, subprocess, xml.etree.ElementTree as ET
+from datetime import datetime, timezone
+from pathlib import Path
+from html.parser import HTMLParser
+class Plain(HTMLParser):
+    def __init__(self): super().__init__(); self.parts=[]
+    def handle_data(self,data): self.parts.append(data)
+def plain(text):
+    p=Plain(); p.feed(text or ''); return ''.join(p.parts).strip()
+root=Path(__file__).resolve().parents[1]
+path=root/'news.json'
+data=json.loads(path.read_text()) if path.exists() else {'feeds':{}}
+for cat in ['latest','international','politics','business']:
+    try:
+        xml=subprocess.check_output(['curl','--fail','--silent','--show-error','--location','--max-time','30','https://www.astroawani.com/rss/'+cat+'/public']).strip()
+        doc=ET.fromstring(xml)
+        items=[{'title':plain(n.findtext('title')),'summary':plain(n.findtext('description'))[:700],'url':(n.findtext('link') or '').strip(),'date':n.findtext('pubDate') or ''} for n in doc.findall('./channel/item')[:12]]
+        if not items: raise ValueError('Empty feed')
+        data['feeds'][cat]={'updated':datetime.now(timezone.utc).isoformat(),'items':items}
+        print(cat, len(items))
+    except Exception as e:
+        print(cat,'unavailable:',type(e).__name__)
+if not data['feeds']: raise SystemExit('No news feeds available')
+path.write_text(json.dumps(data,ensure_ascii=False,indent=2))
