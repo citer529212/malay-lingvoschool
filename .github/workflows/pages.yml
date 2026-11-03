@@ -20,13 +20,19 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Validate course and preserved trainer
+        run: |
+          python3 scripts/verify_course.py
+          node --check school.js
+          node --check military-words.js
       - name: Refresh Malay news
         run: python3 scripts/update_news.py
       - uses: actions/configure-pages@v5
       - name: Prepare public files
         run: |
           mkdir _site
-          cp index.html news.json .nojekyll _site/
+          cp index.html military.html military-words.js school.js school.css news.json .nojekyll _site/
+          cp -R assets _site/assets
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

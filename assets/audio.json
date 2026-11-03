@@ -1,0 +1,1325 @@
+[
+  {
+    "id": "intro-L01ex01",
+    "stage": "intro",
+    "lesson": 1,
+    "kind": "exercise",
+    "label": "Упражнение 1",
+    "src": "assets/audio/intro/L01ex01.mp3",
+    "original": "L01ex01.mp3"
+  },
+  {
+    "id": "intro-L01ex02",
+    "stage": "intro",
+    "lesson": 1,
+    "kind": "exercise",
+    "label": "Упражнение 2",
+    "src": "assets/audio/intro/L01ex02.mp3",
+    "original": "L01ex02.mp3"
+  },
+  {
+    "id": "intro-L01ex03",
+    "stage": "intro",
+    "lesson": 1,
+    "kind": "exercise",
+    "label": "Упражнение 3",
+    "src": "assets/audio/intro/L01ex03.mp3",
+    "original": "L01ex03.mp3"
+  },
+  {
+    "id": "intro-L01ex04",
+    "stage": "intro",
+    "lesson": 1,
+    "kind": "exercise",
+    "label": "Упражнение 4",
+    "src": "assets/audio/intro/L01ex04.mp3",
+    "original": "L01ex04.mp3"
+  },
+  {
+    "id": "intro-L01ex05",
+    "stage": "intro",
+    "lesson": 1,
+    "kind": "exercise",
+    "label": "Упражнение 5",
+    "src": "assets/audio/intro/L01ex05.mp3",
+    "original": "L01ex05.mp3"
+  },
+  {
+    "id": "intro-L01ex06",
+    "stage": "intro",
+    "lesson": 1,
+    "kind": "exercise",
+    "label": "Упражнение 6",
+    "src": "assets/audio/intro/L01ex06.mp3",
+    "original": "L01ex06.mp3"
+  },
+  {
+    "id": "intro-L01ex07",
+    "stage": "intro",
+    "lesson": 1,
+    "kind": "exercise",
+    "label": "Упражнение 7",
+    "src": "assets/audio/intro/L01ex07.mp3",
+    "original": "L01ex07.mp3"
+  },
+  {
+    "id": "intro-L01ex09",
+    "stage": "intro",
+    "lesson": 1,
+    "kind": "exercise",
+    "label": "Упражнение 9",
+    "src": "assets/audio/intro/L01ex09.mp3",
+    "original": "L01ex09.mp3"
+  },
+  {
+    "id": "intro-L01ex10",
+    "stage": "intro",
+    "lesson": 1,
+    "kind": "exercise",
+    "label": "Упражнение 10",
+    "src": "assets/audio/intro/L01ex10.mp3",
+    "original": "L01ex10.mp3"
+  },
+  {
+    "id": "intro-L01ex11",
+    "stage": "intro",
+    "lesson": 1,
+    "kind": "exercise",
+    "label": "Упражнение 11",
+    "src": "assets/audio/intro/L01ex11.mp3",
+    "original": "L01ex11.mp3"
+  },
+  {
+    "id": "intro-L01ex12",
+    "stage": "intro",
+    "lesson": 1,
+    "kind": "exercise",
+    "label": "Упражнение 12",
+    "src": "assets/audio/intro/L01ex12.mp3",
+    "original": "L01ex12.mp3"
+  },
+  {
+    "id": "intro-L01words",
+    "stage": "intro",
+    "lesson": 1,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/intro/L01words.mp3",
+    "original": "L01words.mp3"
+  },
+  {
+    "id": "intro-L02ex01",
+    "stage": "intro",
+    "lesson": 2,
+    "kind": "exercise",
+    "label": "Упражнение 1",
+    "src": "assets/audio/intro/L02ex01.mp3",
+    "original": "L02ex01.mp3"
+  },
+  {
+    "id": "intro-L02ex02",
+    "stage": "intro",
+    "lesson": 2,
+    "kind": "exercise",
+    "label": "Упражнение 2",
+    "src": "assets/audio/intro/L02ex02.mp3",
+    "original": "L02ex02.mp3"
+  },
+  {
+    "id": "intro-L02ex03",
+    "stage": "intro",
+    "lesson": 2,
+    "kind": "exercise",
+    "label": "Упражнение 3",
+    "src": "assets/audio/intro/L02ex03.mp3",
+    "original": "L02ex03.mp3"
+  },
+  {
+    "id": "intro-L02ex05",
+    "stage": "intro",
+    "lesson": 2,
+    "kind": "exercise",
+    "label": "Упражнение 5",
+    "src": "assets/audio/intro/L02ex05.mp3",
+    "original": "L02ex05.mp3"
+  },
+  {
+    "id": "intro-L02ex07",
+    "stage": "intro",
+    "lesson": 2,
+    "kind": "exercise",
+    "label": "Упражнение 7",
+    "src": "assets/audio/intro/L02ex07.mp3",
+    "original": "L02ex07.mp3"
+  },
+  {
+    "id": "intro-L02ex08",
+    "stage": "intro",
+    "lesson": 2,
+    "kind": "exercise",
+    "label": "Упражнение 8",
+    "src": "assets/audio/intro/L02ex08.mp3",
+    "original": "L02ex08.mp3"
+  },
+  {
+    "id": "intro-L02ex09",
+    "stage": "intro",
+    "lesson": 2,
+    "kind": "exercise",
+    "label": "Упражнение 9",
+    "src": "assets/audio/intro/L02ex09.mp3",
+    "original": "L02ex09.mp3"
+  },
+  {
+    "id": "intro-L02ex12",
+    "stage": "intro",
+    "lesson": 2,
+    "kind": "exercise",
+    "label": "Упражнение 12",
+    "src": "assets/audio/intro/L02ex12.mp3",
+    "original": "L02ex12.mp3"
+  },
+  {
+    "id": "intro-L02ex14",
+    "stage": "intro",
+    "lesson": 2,
+    "kind": "exercise",
+    "label": "Упражнение 14",
+    "src": "assets/audio/intro/L02ex14.mp3",
+    "original": "L02ex14.mp3"
+  },
+  {
+    "id": "intro-L02ex20",
+    "stage": "intro",
+    "lesson": 2,
+    "kind": "exercise",
+    "label": "Упражнение 20",
+    "src": "assets/audio/intro/L02ex20.mp3",
+    "original": "L02ex20.mp3"
+  },
+  {
+    "id": "intro-L02words",
+    "stage": "intro",
+    "lesson": 2,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/intro/L02words.mp3",
+    "original": "L02words.mp3"
+  },
+  {
+    "id": "intro-L03ex01",
+    "stage": "intro",
+    "lesson": 3,
+    "kind": "exercise",
+    "label": "Упражнение 1",
+    "src": "assets/audio/intro/L03ex01.mp3",
+    "original": "L03ex01.mp3"
+  },
+  {
+    "id": "intro-L03ex03",
+    "stage": "intro",
+    "lesson": 3,
+    "kind": "exercise",
+    "label": "Упражнение 3",
+    "src": "assets/audio/intro/L03ex03.mp3",
+    "original": "L03ex03.mp3"
+  },
+  {
+    "id": "intro-L03ex06",
+    "stage": "intro",
+    "lesson": 3,
+    "kind": "exercise",
+    "label": "Упражнение 6",
+    "src": "assets/audio/intro/L03ex06.mp3",
+    "original": "L03ex06.mp3"
+  },
+  {
+    "id": "intro-L03ex08",
+    "stage": "intro",
+    "lesson": 3,
+    "kind": "exercise",
+    "label": "Упражнение 8",
+    "src": "assets/audio/intro/L03ex08.mp3",
+    "original": "L03ex08.mp3"
+  },
+  {
+    "id": "intro-L03ex09",
+    "stage": "intro",
+    "lesson": 3,
+    "kind": "exercise",
+    "label": "Упражнение 9",
+    "src": "assets/audio/intro/L03ex09.mp3",
+    "original": "L03ex09.mp3"
+  },
+  {
+    "id": "intro-L03ex13",
+    "stage": "intro",
+    "lesson": 3,
+    "kind": "exercise",
+    "label": "Упражнение 13",
+    "src": "assets/audio/intro/L03ex13.mp3",
+    "original": "L03ex13.mp3"
+  },
+  {
+    "id": "intro-L03words",
+    "stage": "intro",
+    "lesson": 3,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/intro/L03words.mp3",
+    "original": "L03words.mp3"
+  },
+  {
+    "id": "intro-L04ex01",
+    "stage": "intro",
+    "lesson": 4,
+    "kind": "exercise",
+    "label": "Упражнение 1",
+    "src": "assets/audio/intro/L04ex01.mp3",
+    "original": "L04ex01.mp3"
+  },
+  {
+    "id": "intro-L04ex03",
+    "stage": "intro",
+    "lesson": 4,
+    "kind": "exercise",
+    "label": "Упражнение 3",
+    "src": "assets/audio/intro/L04ex03.mp3",
+    "original": "L04ex03.mp3"
+  },
+  {
+    "id": "intro-L04ex04",
+    "stage": "intro",
+    "lesson": 4,
+    "kind": "exercise",
+    "label": "Упражнение 4",
+    "src": "assets/audio/intro/L04ex04.mp3",
+    "original": "L04ex04.mp3"
+  },
+  {
+    "id": "intro-L04ex06",
+    "stage": "intro",
+    "lesson": 4,
+    "kind": "exercise",
+    "label": "Упражнение 6",
+    "src": "assets/audio/intro/L04ex06.mp3",
+    "original": "L04ex06.mp3"
+  },
+  {
+    "id": "intro-L04ex07",
+    "stage": "intro",
+    "lesson": 4,
+    "kind": "exercise",
+    "label": "Упражнение 7",
+    "src": "assets/audio/intro/L04ex07.mp3",
+    "original": "L04ex07.mp3"
+  },
+  {
+    "id": "intro-L04ex08",
+    "stage": "intro",
+    "lesson": 4,
+    "kind": "exercise",
+    "label": "Упражнение 8",
+    "src": "assets/audio/intro/L04ex08.mp3",
+    "original": "L04ex08.mp3"
+  },
+  {
+    "id": "intro-L04ex09",
+    "stage": "intro",
+    "lesson": 4,
+    "kind": "exercise",
+    "label": "Упражнение 9",
+    "src": "assets/audio/intro/L04ex09.mp3",
+    "original": "L04ex09.mp3"
+  },
+  {
+    "id": "intro-L04ex10",
+    "stage": "intro",
+    "lesson": 4,
+    "kind": "exercise",
+    "label": "Упражнение 10",
+    "src": "assets/audio/intro/L04ex10.mp3",
+    "original": "L04ex10.mp3"
+  },
+  {
+    "id": "intro-L04ex14",
+    "stage": "intro",
+    "lesson": 4,
+    "kind": "exercise",
+    "label": "Упражнение 14",
+    "src": "assets/audio/intro/L04ex14.mp3",
+    "original": "L04ex14.mp3"
+  },
+  {
+    "id": "intro-L04text",
+    "stage": "intro",
+    "lesson": 4,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/intro/L04text.mp3",
+    "original": "L04text.mp3"
+  },
+  {
+    "id": "intro-L04words",
+    "stage": "intro",
+    "lesson": 4,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/intro/L04words.mp3",
+    "original": "L04words.mp3"
+  },
+  {
+    "id": "intro-L05ex02",
+    "stage": "intro",
+    "lesson": 5,
+    "kind": "exercise",
+    "label": "Упражнение 2",
+    "src": "assets/audio/intro/L05ex02.mp3",
+    "original": "L05ex02.mp3"
+  },
+  {
+    "id": "intro-L05ex03",
+    "stage": "intro",
+    "lesson": 5,
+    "kind": "exercise",
+    "label": "Упражнение 3",
+    "src": "assets/audio/intro/L05ex03.mp3",
+    "original": "L05ex03.mp3"
+  },
+  {
+    "id": "intro-L05ex09",
+    "stage": "intro",
+    "lesson": 5,
+    "kind": "exercise",
+    "label": "Упражнение 9",
+    "src": "assets/audio/intro/L05ex09.mp3",
+    "original": "L05ex09.mp3"
+  },
+  {
+    "id": "intro-L05text",
+    "stage": "intro",
+    "lesson": 5,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/intro/L05text.mp3",
+    "original": "L05text.mp3"
+  },
+  {
+    "id": "intro-L05words9",
+    "stage": "intro",
+    "lesson": 5,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/intro/L05words9.mp3",
+    "original": "L05words9.mp3"
+  },
+  {
+    "id": "intro-L06ex1",
+    "stage": "intro",
+    "lesson": 6,
+    "kind": "exercise",
+    "label": "Упражнение 1",
+    "src": "assets/audio/intro/L06ex1.mp3",
+    "original": "L06ex1.mp3"
+  },
+  {
+    "id": "intro-L06ex2",
+    "stage": "intro",
+    "lesson": 6,
+    "kind": "exercise",
+    "label": "Упражнение 2",
+    "src": "assets/audio/intro/L06ex2.mp3",
+    "original": "L06ex2.mp3"
+  },
+  {
+    "id": "intro-L06text",
+    "stage": "intro",
+    "lesson": 6,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/intro/L06text.mp3",
+    "original": "L06text.mp3"
+  },
+  {
+    "id": "intro-L06words",
+    "stage": "intro",
+    "lesson": 6,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/intro/L06words.mp3",
+    "original": "L06words.mp3"
+  },
+  {
+    "id": "intro-L07dialog1",
+    "stage": "intro",
+    "lesson": 7,
+    "kind": "dialog",
+    "label": "Диалог 1",
+    "src": "assets/audio/intro/L07dialog1.mp3",
+    "original": "L07dialog1.mp3"
+  },
+  {
+    "id": "intro-L07dialog2",
+    "stage": "intro",
+    "lesson": 7,
+    "kind": "dialog",
+    "label": "Диалог 2",
+    "src": "assets/audio/intro/L07dialog2.mp3",
+    "original": "L07dialog2.mp3"
+  },
+  {
+    "id": "intro-L07ex1",
+    "stage": "intro",
+    "lesson": 7,
+    "kind": "exercise",
+    "label": "Упражнение 1",
+    "src": "assets/audio/intro/L07ex1.mp3",
+    "original": "L07ex1.mp3"
+  },
+  {
+    "id": "intro-L07ex2",
+    "stage": "intro",
+    "lesson": 7,
+    "kind": "exercise",
+    "label": "Упражнение 2",
+    "src": "assets/audio/intro/L07ex2.mp3",
+    "original": "L07ex2.mp3"
+  },
+  {
+    "id": "intro-L07ex3",
+    "stage": "intro",
+    "lesson": 7,
+    "kind": "exercise",
+    "label": "Упражнение 3",
+    "src": "assets/audio/intro/L07ex3.mp3",
+    "original": "L07ex3.mp3"
+  },
+  {
+    "id": "intro-L07ex4",
+    "stage": "intro",
+    "lesson": 7,
+    "kind": "exercise",
+    "label": "Упражнение 4",
+    "src": "assets/audio/intro/L07ex4.mp3",
+    "original": "L07ex4.mp3"
+  },
+  {
+    "id": "intro-L07text",
+    "stage": "intro",
+    "lesson": 7,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/intro/L07text.mp3",
+    "original": "L07text.mp3"
+  },
+  {
+    "id": "intro-L07words",
+    "stage": "intro",
+    "lesson": 7,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/intro/L07words.mp3",
+    "original": "L07words.mp3"
+  },
+  {
+    "id": "intro-L08dialog",
+    "stage": "intro",
+    "lesson": 8,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/intro/L08dialog.mp3",
+    "original": "L08dialog.mp3"
+  },
+  {
+    "id": "intro-L08ex1",
+    "stage": "intro",
+    "lesson": 8,
+    "kind": "exercise",
+    "label": "Упражнение 1",
+    "src": "assets/audio/intro/L08ex1.mp3",
+    "original": "L08ex1.mp3"
+  },
+  {
+    "id": "intro-L08ex2",
+    "stage": "intro",
+    "lesson": 8,
+    "kind": "exercise",
+    "label": "Упражнение 2",
+    "src": "assets/audio/intro/L08ex2.mp3",
+    "original": "L08ex2.mp3"
+  },
+  {
+    "id": "intro-L08ex3",
+    "stage": "intro",
+    "lesson": 8,
+    "kind": "exercise",
+    "label": "Упражнение 3",
+    "src": "assets/audio/intro/L08ex3.mp3",
+    "original": "L08ex3.mp3"
+  },
+  {
+    "id": "intro-L08ex4",
+    "stage": "intro",
+    "lesson": 8,
+    "kind": "exercise",
+    "label": "Упражнение 4",
+    "src": "assets/audio/intro/L08ex4.mp3",
+    "original": "L08ex4.mp3"
+  },
+  {
+    "id": "intro-L08ex5",
+    "stage": "intro",
+    "lesson": 8,
+    "kind": "exercise",
+    "label": "Упражнение 5",
+    "src": "assets/audio/intro/L08ex5.mp3",
+    "original": "L08ex5.mp3"
+  },
+  {
+    "id": "intro-L08text",
+    "stage": "intro",
+    "lesson": 8,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/intro/L08text.mp3",
+    "original": "L08text.mp3"
+  },
+  {
+    "id": "intro-L08words",
+    "stage": "intro",
+    "lesson": 8,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/intro/L08words.mp3",
+    "original": "L08words.mp3"
+  },
+  {
+    "id": "intro-L09dialog",
+    "stage": "intro",
+    "lesson": 9,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/intro/L09dialog.mp3",
+    "original": "L09dialog.mp3"
+  },
+  {
+    "id": "intro-L09text",
+    "stage": "intro",
+    "lesson": 9,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/intro/L09text.mp3",
+    "original": "L09text.mp3"
+  },
+  {
+    "id": "intro-L09words",
+    "stage": "intro",
+    "lesson": 9,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/intro/L09words.mp3",
+    "original": "L09words.mp3"
+  },
+  {
+    "id": "basic-L01dialog",
+    "stage": "basic",
+    "lesson": 1,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L01dialog.mp3",
+    "original": "L01dialog.mp3"
+  },
+  {
+    "id": "basic-L01text",
+    "stage": "basic",
+    "lesson": 1,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L01text.mp3",
+    "original": "L01text.mp3"
+  },
+  {
+    "id": "basic-L01words",
+    "stage": "basic",
+    "lesson": 1,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L01words.mp3",
+    "original": "L01words.mp3"
+  },
+  {
+    "id": "basic-L02dialog",
+    "stage": "basic",
+    "lesson": 2,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L02dialog.mp3",
+    "original": "L02dialog.mp3"
+  },
+  {
+    "id": "basic-L02text",
+    "stage": "basic",
+    "lesson": 2,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L02text.mp3",
+    "original": "L02text.mp3"
+  },
+  {
+    "id": "basic-L02words",
+    "stage": "basic",
+    "lesson": 2,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L02words.mp3",
+    "original": "L02words.mp3"
+  },
+  {
+    "id": "basic-L03dialog1",
+    "stage": "basic",
+    "lesson": 3,
+    "kind": "dialog",
+    "label": "Диалог 1",
+    "src": "assets/audio/basic/L03dialog1.mp3",
+    "original": "L03dialog1.mp3"
+  },
+  {
+    "id": "basic-L03dialog2",
+    "stage": "basic",
+    "lesson": 3,
+    "kind": "dialog",
+    "label": "Диалог 2",
+    "src": "assets/audio/basic/L03dialog2.mp3",
+    "original": "L03dialog2.mp3"
+  },
+  {
+    "id": "basic-L03text",
+    "stage": "basic",
+    "lesson": 3,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L03text.mp3",
+    "original": "L03text.mp3"
+  },
+  {
+    "id": "basic-L03words",
+    "stage": "basic",
+    "lesson": 3,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L03words.mp3",
+    "original": "L03words.mp3"
+  },
+  {
+    "id": "basic-L04dialog",
+    "stage": "basic",
+    "lesson": 4,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L04dialog.mp3",
+    "original": "L04dialog.mp3"
+  },
+  {
+    "id": "basic-L04text",
+    "stage": "basic",
+    "lesson": 4,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L04text.mp3",
+    "original": "L04text.mp3"
+  },
+  {
+    "id": "basic-L04words",
+    "stage": "basic",
+    "lesson": 4,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L04words.mp3",
+    "original": "L04words.mp3"
+  },
+  {
+    "id": "basic-L05dialog",
+    "stage": "basic",
+    "lesson": 5,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L05dialog.mp3",
+    "original": "L05dialog.mp3"
+  },
+  {
+    "id": "basic-L05text",
+    "stage": "basic",
+    "lesson": 5,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L05text.mp3",
+    "original": "L05text.mp3"
+  },
+  {
+    "id": "basic-L05words",
+    "stage": "basic",
+    "lesson": 5,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L05words.mp3",
+    "original": "L05words.mp3"
+  },
+  {
+    "id": "basic-L06dialog1",
+    "stage": "basic",
+    "lesson": 6,
+    "kind": "dialog",
+    "label": "Диалог 1",
+    "src": "assets/audio/basic/L06dialog1.mp3",
+    "original": "L06dialog1.mp3"
+  },
+  {
+    "id": "basic-L06dialog2",
+    "stage": "basic",
+    "lesson": 6,
+    "kind": "dialog",
+    "label": "Диалог 2",
+    "src": "assets/audio/basic/L06dialog2.mp3",
+    "original": "L06dialog2.mp3"
+  },
+  {
+    "id": "basic-L06text",
+    "stage": "basic",
+    "lesson": 6,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L06text.mp3",
+    "original": "L06text.mp3"
+  },
+  {
+    "id": "basic-L06words",
+    "stage": "basic",
+    "lesson": 6,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L06words.mp3",
+    "original": "L06words.mp3"
+  },
+  {
+    "id": "basic-L07dialog",
+    "stage": "basic",
+    "lesson": 7,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L07dialog.mp3",
+    "original": "L07dialog.mp3"
+  },
+  {
+    "id": "basic-L07text",
+    "stage": "basic",
+    "lesson": 7,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L07text.mp3",
+    "original": "L07text.mp3"
+  },
+  {
+    "id": "basic-L07words",
+    "stage": "basic",
+    "lesson": 7,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L07words.mp3",
+    "original": "L07words.mp3"
+  },
+  {
+    "id": "basic-L08text1",
+    "stage": "basic",
+    "lesson": 8,
+    "kind": "text",
+    "label": "Текст 1",
+    "src": "assets/audio/basic/L08text1.mp3",
+    "original": "L08text1.mp3"
+  },
+  {
+    "id": "basic-L08text2",
+    "stage": "basic",
+    "lesson": 8,
+    "kind": "text",
+    "label": "Текст 2",
+    "src": "assets/audio/basic/L08text2.mp3",
+    "original": "L08text2.mp3"
+  },
+  {
+    "id": "basic-L08words",
+    "stage": "basic",
+    "lesson": 8,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L08words.mp3",
+    "original": "L08words.mp3"
+  },
+  {
+    "id": "basic-L09dialog",
+    "stage": "basic",
+    "lesson": 9,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L09dialog.mp3",
+    "original": "L09dialog.mp3"
+  },
+  {
+    "id": "basic-L09text",
+    "stage": "basic",
+    "lesson": 9,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L09text.mp3",
+    "original": "L09text.mp3"
+  },
+  {
+    "id": "basic-L09words",
+    "stage": "basic",
+    "lesson": 9,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L09words.mp3",
+    "original": "L09words.mp3"
+  },
+  {
+    "id": "basic-L10dialog1",
+    "stage": "basic",
+    "lesson": 10,
+    "kind": "dialog",
+    "label": "Диалог 1",
+    "src": "assets/audio/basic/L10dialog1.mp3",
+    "original": "L10dialog1.mp3"
+  },
+  {
+    "id": "basic-L10dialog2",
+    "stage": "basic",
+    "lesson": 10,
+    "kind": "dialog",
+    "label": "Диалог 2",
+    "src": "assets/audio/basic/L10dialog2.mp3",
+    "original": "L10dialog2.mp3"
+  },
+  {
+    "id": "basic-L10text",
+    "stage": "basic",
+    "lesson": 10,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L10text.mp3",
+    "original": "L10text.mp3"
+  },
+  {
+    "id": "basic-L10words",
+    "stage": "basic",
+    "lesson": 10,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L10words.mp3",
+    "original": "L10words.mp3"
+  },
+  {
+    "id": "basic-L11dialog",
+    "stage": "basic",
+    "lesson": 11,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L11dialog.mp3",
+    "original": "L11dialog.mp3"
+  },
+  {
+    "id": "basic-L11text",
+    "stage": "basic",
+    "lesson": 11,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L11text.mp3",
+    "original": "L11text.mp3"
+  },
+  {
+    "id": "basic-L11words",
+    "stage": "basic",
+    "lesson": 11,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L11words.mp3",
+    "original": "L11words.mp3"
+  },
+  {
+    "id": "basic-L12dialog1",
+    "stage": "basic",
+    "lesson": 12,
+    "kind": "dialog",
+    "label": "Диалог 1",
+    "src": "assets/audio/basic/L12dialog1.mp3",
+    "original": "L12dialog1.mp3"
+  },
+  {
+    "id": "basic-L12dialog2",
+    "stage": "basic",
+    "lesson": 12,
+    "kind": "dialog",
+    "label": "Диалог 2",
+    "src": "assets/audio/basic/L12dialog2.mp3",
+    "original": "L12dialog2.mp3"
+  },
+  {
+    "id": "basic-L12text",
+    "stage": "basic",
+    "lesson": 12,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L12text.mp3",
+    "original": "L12text.mp3"
+  },
+  {
+    "id": "basic-L12words",
+    "stage": "basic",
+    "lesson": 12,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L12words.mp3",
+    "original": "L12words.mp3"
+  },
+  {
+    "id": "basic-L13dialog1",
+    "stage": "basic",
+    "lesson": 13,
+    "kind": "dialog",
+    "label": "Диалог 1",
+    "src": "assets/audio/basic/L13dialog1.mp3",
+    "original": "L13dialog1.mp3"
+  },
+  {
+    "id": "basic-L13dialog2",
+    "stage": "basic",
+    "lesson": 13,
+    "kind": "dialog",
+    "label": "Диалог 2",
+    "src": "assets/audio/basic/L13dialog2.mp3",
+    "original": "L13dialog2.mp3"
+  },
+  {
+    "id": "basic-L13text",
+    "stage": "basic",
+    "lesson": 13,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L13text.mp3",
+    "original": "L13text.mp3"
+  },
+  {
+    "id": "basic-L13words",
+    "stage": "basic",
+    "lesson": 13,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L13words.mp3",
+    "original": "L13words.mp3"
+  },
+  {
+    "id": "basic-L14dialog",
+    "stage": "basic",
+    "lesson": 14,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L14dialog.mp3",
+    "original": "L14dialog.mp3"
+  },
+  {
+    "id": "basic-L14text",
+    "stage": "basic",
+    "lesson": 14,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L14text.mp3",
+    "original": "L14text.mp3"
+  },
+  {
+    "id": "basic-L14words",
+    "stage": "basic",
+    "lesson": 14,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L14words.mp3",
+    "original": "L14words.mp3"
+  },
+  {
+    "id": "basic-L15dialog1",
+    "stage": "basic",
+    "lesson": 15,
+    "kind": "dialog",
+    "label": "Диалог 1",
+    "src": "assets/audio/basic/L15dialog1.mp3",
+    "original": "L15dialog1.mp3"
+  },
+  {
+    "id": "basic-L15dialog2",
+    "stage": "basic",
+    "lesson": 15,
+    "kind": "dialog",
+    "label": "Диалог 2",
+    "src": "assets/audio/basic/L15dialog2.mp3",
+    "original": "L15dialog2.mp3"
+  },
+  {
+    "id": "basic-L15text",
+    "stage": "basic",
+    "lesson": 15,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L15text.mp3",
+    "original": "L15text.mp3"
+  },
+  {
+    "id": "basic-L15words",
+    "stage": "basic",
+    "lesson": 15,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L15words.mp3",
+    "original": "L15words.mp3"
+  },
+  {
+    "id": "basic-L16dialog1",
+    "stage": "basic",
+    "lesson": 16,
+    "kind": "dialog",
+    "label": "Диалог 1",
+    "src": "assets/audio/basic/L16dialog1.mp3",
+    "original": "L16dialog1.mp3"
+  },
+  {
+    "id": "basic-L16dialog2",
+    "stage": "basic",
+    "lesson": 16,
+    "kind": "dialog",
+    "label": "Диалог 2",
+    "src": "assets/audio/basic/L16dialog2.mp3",
+    "original": "L16dialog2.mp3"
+  },
+  {
+    "id": "basic-L16dialog3",
+    "stage": "basic",
+    "lesson": 16,
+    "kind": "dialog",
+    "label": "Диалог 3",
+    "src": "assets/audio/basic/L16dialog3.mp3",
+    "original": "L16dialog3.mp3"
+  },
+  {
+    "id": "basic-L16text",
+    "stage": "basic",
+    "lesson": 16,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L16text.mp3",
+    "original": "L16text.mp3"
+  },
+  {
+    "id": "basic-L16words",
+    "stage": "basic",
+    "lesson": 16,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L16words.mp3",
+    "original": "L16words.mp3"
+  },
+  {
+    "id": "basic-L17dialog",
+    "stage": "basic",
+    "lesson": 17,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L17dialog.mp3",
+    "original": "L17dialog.mp3"
+  },
+  {
+    "id": "basic-L17text",
+    "stage": "basic",
+    "lesson": 17,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L17text.mp3",
+    "original": "L17text.mp3"
+  },
+  {
+    "id": "basic-L17words",
+    "stage": "basic",
+    "lesson": 17,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L17words.mp3",
+    "original": "L17words.mp3"
+  },
+  {
+    "id": "basic-L18text",
+    "stage": "basic",
+    "lesson": 18,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L18text.mp3",
+    "original": "L18text.mp3"
+  },
+  {
+    "id": "basic-L18words",
+    "stage": "basic",
+    "lesson": 18,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L18words.mp3",
+    "original": "L18words.mp3"
+  },
+  {
+    "id": "basic-L19dialog",
+    "stage": "basic",
+    "lesson": 19,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L19dialog.mp3",
+    "original": "L19dialog.mp3"
+  },
+  {
+    "id": "basic-L19text",
+    "stage": "basic",
+    "lesson": 19,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L19text.mp3",
+    "original": "L19text.mp3"
+  },
+  {
+    "id": "basic-L19words",
+    "stage": "basic",
+    "lesson": 19,
+    "kind": "words",
+    "label": "Слова",
+    "src": "assets/audio/basic/L19words.mp3",
+    "original": "L19words.mp3"
+  },
+  {
+    "id": "basic-L20dialog",
+    "stage": "basic",
+    "lesson": 20,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L20dialog.mp3",
+    "original": "L20dialog.mp3"
+  },
+  {
+    "id": "basic-L21dialog",
+    "stage": "basic",
+    "lesson": 21,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L21dialog.mp3",
+    "original": "L21dialog.mp3"
+  },
+  {
+    "id": "basic-L22dialog",
+    "stage": "basic",
+    "lesson": 22,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L22dialog.mp3",
+    "original": "L22dialog.mp3"
+  },
+  {
+    "id": "basic-L23dialog",
+    "stage": "basic",
+    "lesson": 23,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L23dialog.mp3",
+    "original": "L23dialog.mp3"
+  },
+  {
+    "id": "basic-L24dialog",
+    "stage": "basic",
+    "lesson": 24,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L24dialog.mp3",
+    "original": "L24dialog.mp3"
+  },
+  {
+    "id": "basic-L25dialog",
+    "stage": "basic",
+    "lesson": 25,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L25dialog.mp3",
+    "original": "L25dialog.mp3"
+  },
+  {
+    "id": "basic-L25text",
+    "stage": "basic",
+    "lesson": 25,
+    "kind": "text",
+    "label": "Текст",
+    "src": "assets/audio/basic/L25text.mp3",
+    "original": "L25text.mp3"
+  },
+  {
+    "id": "basic-L26dialog1",
+    "stage": "basic",
+    "lesson": 26,
+    "kind": "dialog",
+    "label": "Диалог 1",
+    "src": "assets/audio/basic/L26dialog1.mp3",
+    "original": "L26dialog1.mp3"
+  },
+  {
+    "id": "basic-L26dialog2",
+    "stage": "basic",
+    "lesson": 26,
+    "kind": "dialog",
+    "label": "Диалог 2",
+    "src": "assets/audio/basic/L26dialog2.mp3",
+    "original": "L26dialog2.mp3"
+  },
+  {
+    "id": "basic-L27dialog",
+    "stage": "basic",
+    "lesson": 27,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L27dialog.mp3",
+    "original": "L27dialog.mp3"
+  },
+  {
+    "id": "basic-L28dialog",
+    "stage": "basic",
+    "lesson": 28,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L28dialog.mp3",
+    "original": "L28dialog.mp3"
+  },
+  {
+    "id": "basic-L29dialog",
+    "stage": "basic",
+    "lesson": 29,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L29dialog.mp3",
+    "original": "L29dialog.mp3"
+  },
+  {
+    "id": "basic-L30dialog",
+    "stage": "basic",
+    "lesson": 30,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L30dialog.mp3",
+    "original": "L30dialog.mp3"
+  },
+  {
+    "id": "basic-L31dialog",
+    "stage": "basic",
+    "lesson": 31,
+    "kind": "dialog",
+    "label": "Диалог",
+    "src": "assets/audio/basic/L31dialog.mp3",
+    "original": "L31dialog.mp3"
+  }
+]
