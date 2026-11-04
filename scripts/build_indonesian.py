@@ -231,7 +231,7 @@ def localize(s):
            ('MS','ID'),("'ms'","'id'"),('"ms"','"id"'),('ms:new','id:new'),('dictIndex.ms','dictIndex.id'),
            ('?sl=ms','?sl=id'),('malay-','indonesian-')]
     for a,b in pairs:s=s.replace(a,b)
-    return s.replace('.ms', '.id')
+    return s.replace('.ms', '.id').replace('малайск', 'индонезийск').replace('Малайск', 'Индонезийск')
 
 html=(ROOT/'index.html').read_text()
 # Strip an existing switch when rebuilding.
