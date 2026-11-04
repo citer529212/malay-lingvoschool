@@ -1,0 +1,152 @@
+{
+  "title": "Индонезийский язык · вводные примеры",
+  "authors": [],
+  "year": 2026,
+  "pageCount": 0,
+  "ocr": false,
+  "status": "awaiting-user-materials",
+  "lessons": [
+    {
+      "id": "intro-1",
+      "number": 1,
+      "stage": "intro",
+      "title": "Знакомство",
+      "subtitle": "Местоимения и представление",
+      "pages": [],
+      "blocks": [
+        {
+          "id": "intro-1-read",
+          "kind": "read",
+          "title": "Текст",
+          "text": "Nama saya Anna. Saya dari Rusia. Saya belajar bahasa Indonesia. Ini teman saya. Namanya Budi. Dia dari Indonesia.",
+          "pages": [],
+          "translation": "Меня зовут Анна. Я из России. Я изучаю индонезийский язык. Это мой друг. Его зовут Буди. Он из Индонезии."
+        },
+        {
+          "id": "intro-1-dialog",
+          "kind": "dialog",
+          "title": "Диалог",
+          "text": "Anna: Selamat pagi! Siapa nama Anda?\nBudi: Selamat pagi! Nama saya Budi.\nAnna: Anda dari mana?\nBudi: Saya dari Indonesia. Anda?\nAnna: Saya dari Rusia. Senang berkenalan dengan Anda.",
+          "pages": []
+        },
+        {
+          "id": "intro-1-theory",
+          "kind": "theory",
+          "title": "Разбор",
+          "text": "saya — я; Anda — Вы; dia — он, она. В настоящем времени связка перед существительным часто отсутствует: Saya mahasiswa — Я студент. Принадлежность: teman saya — мой друг. Вопрос Siapa nama Anda? — Как Вас зовут?",
+          "pages": []
+        },
+        {
+          "id": "intro-1-exercise",
+          "kind": "exercise",
+          "title": "Практика",
+          "text": "1. Представьтесь по образцу: Nama saya … Saya dari …\n2. Переведите: «Это мой друг. Он из России».\n3. Ответьте: Siapa nama teman Anna? Dari mana Budi?",
+          "pages": [],
+          "answer": "1. Индивидуальный ответ.\n2. Ini teman saya. Dia dari Rusia.\n3. Nama teman Anna Budi. Budi dari Indonesia."
+        },
+        {
+          "id": "intro-1-vocab",
+          "kind": "vocab",
+          "title": "Слова урока",
+          "text": "saya — я\nAnda — Вы\ndia — он, она\nini — это; этот\nnama — имя\nnamanya — его/её зовут; его/её имя\ndari — из; от\nRusia — Россия\nIndonesia — Индонезия\nbahasa — язык\nbelajar — учиться; изучать\nteman — друг\nselamat — благополучный; часть формул приветствия\npagi — утро\nselamat pagi — доброе утро\nsiapa — кто\nmana — который; где (в вопросительных сочетаниях)\nsenang — рад; довольный\nberkenalan — знакомиться\ndengan — с\nmahasiswa — студент",
+          "pages": []
+        }
+      ]
+    },
+    {
+      "id": "intro-2",
+      "number": 2,
+      "stage": "intro",
+      "title": "Учёба и повседневные дела",
+      "subtitle": "Глаголы, вопросы и отрицание",
+      "pages": [],
+      "blocks": [
+        {
+          "id": "intro-2-read",
+          "kind": "read",
+          "title": "Текст",
+          "text": "Saya belajar di universitas. Setiap pagi saya membaca buku. Teman saya menulis di kelas. Kami berbicara bahasa Indonesia. Hari ini saya tidak bekerja. Saya belajar di rumah.",
+          "pages": [],
+          "translation": "Я учусь в университете. Каждое утро я читаю книгу. Мой друг пишет в классе. Мы говорим по-индонезийски. Сегодня я не работаю. Я занимаюсь дома."
+        },
+        {
+          "id": "intro-2-dialog",
+          "kind": "dialog",
+          "title": "Диалог",
+          "text": "Anna: Apa yang Anda lakukan hari ini?\nBudi: Saya membaca buku. Anda?\nAnna: Saya belajar bahasa Indonesia.\nBudi: Apakah Anda belajar di universitas?\nAnna: Ya, saya belajar di universitas.",
+          "pages": []
+        },
+        {
+          "id": "intro-2-theory",
+          "kind": "theory",
+          "title": "Разбор",
+          "text": "Неизменяемость глагола: saya belajar — я учусь, dia belajar — он/она учится. Tidak отрицает действие или признак: saya tidak bekerja. Bukan отрицает именную характеристику: saya bukan guru. Di как предлог места пишется отдельно: di rumah. Kami означает «мы» без собеседника, kita включает собеседника.",
+          "pages": []
+        },
+        {
+          "id": "intro-2-exercise",
+          "kind": "exercise",
+          "title": "Практика",
+          "text": "1. Поставьте отрицание: Saya bekerja. Dia guru.\n2. Переведите: «Я читаю книгу дома».\n3. Ответьте по тексту: Apa yang Anna lakukan setiap pagi?",
+          "pages": [],
+          "answer": "1. Saya tidak bekerja. Dia bukan guru.\n2. Saya membaca buku di rumah.\n3. Anna membaca buku setiap pagi."
+        },
+        {
+          "id": "intro-2-vocab",
+          "kind": "vocab",
+          "title": "Слова урока",
+          "text": "saya — я\nAnda — Вы\ndia — он, она\nkami — мы (без собеседника)\nkita — мы (с собеседником)\nini — это; этот\nIndonesia — Индонезия\nbahasa — язык\nbelajar — учиться; изучать\nteman — друг\npagi — утро\nguru — учитель\ndi — в; на (местоположение)\nuniversitas — университет\nsetiap — каждый\nmembaca — читать\nbuku — книга\nmenulis — писать\nkelas — класс; занятие\nberbicara — говорить\nhari — день\nhari ini — сегодня\ntidak — не (при глаголах и признаках)\nbukan — не (при именах)\nbekerja — работать\nrumah — дом\napa — что\nyang — который; показатель определительной конструкции\nlakukan — делать; выполнять\napakah — вопросительная частица\nya — да",
+          "pages": []
+        }
+      ]
+    },
+    {
+      "id": "intro-3",
+      "number": 3,
+      "stage": "intro",
+      "title": "В городе",
+      "subtitle": "Местоположение и вежливые просьбы",
+      "pages": [],
+      "blocks": [
+        {
+          "id": "intro-3-read",
+          "kind": "read",
+          "title": "Текст",
+          "text": "Saya tinggal di Jakarta. Rumah saya dekat stasiun. Di depan stasiun ada toko. Saya pergi ke toko dengan teman saya. Kami membeli air dan roti. Setelah itu kami pulang.",
+          "pages": [],
+          "translation": "Я живу в Джакарте. Мой дом рядом со станцией. Перед станцией есть магазин. Я иду в магазин с моим другом. Мы покупаем воду и хлеб. После этого мы возвращаемся домой."
+        },
+        {
+          "id": "intro-3-dialog",
+          "kind": "dialog",
+          "title": "Диалог",
+          "text": "Anna: Permisi, di mana stasiun?\nBudi: Stasiun ada di sebelah kiri.\nAnna: Apakah jauh dari sini?\nBudi: Tidak, dekat. Silakan jalan lurus.\nAnna: Terima kasih.\nBudi: Sama-sama.",
+          "pages": []
+        },
+        {
+          "id": "intro-3-theory",
+          "kind": "theory",
+          "title": "Разбор",
+          "text": "Di mana? — Где? Ke mana? — Куда? Dari mana? — Откуда? Предлоги di, ke, dari пишутся отдельно от названия места. Di depan — перед, di sebelah kiri — слева. Permisi — извините (чтобы обратиться или пройти); silakan — пожалуйста (приглашение к действию); terima kasih — спасибо.",
+          "pages": []
+        },
+        {
+          "id": "intro-3-exercise",
+          "kind": "exercise",
+          "title": "Практика",
+          "text": "1. Вставьте di, ke или dari: Saya tinggal … Jakarta. Saya pergi … toko. Saya … Rusia.\n2. Спросите, где станция.\n3. Переведите: «Магазин рядом с домом».",
+          "pages": [],
+          "answer": "1. di; ke; dari.\n2. Di mana stasiun?\n3. Toko dekat rumah."
+        },
+        {
+          "id": "intro-3-vocab",
+          "kind": "vocab",
+          "title": "Слова урока",
+          "text": "saya — я\nkami — мы (без собеседника)\nitu — то; тот\ndari — из; от\nRusia — Россия\nteman — друг\nmana — который; где (в вопросительных сочетаниях)\ndengan — с\ndi — в; на (местоположение)\nke — в; к (направление)\ntidak — не (при глаголах и признаках)\nrumah — дом\napakah — вопросительная частица\ntinggal — жить; оставаться\nJakarta — Джакарта\ndekat — близкий; рядом\nstasiun — станция; вокзал\ndepan — передняя сторона\ndi depan — перед\nada — есть; находиться\ntoko — магазин\npergi — идти; ехать; уходить\nmembeli — покупать\nair — вода\ndan — и\nroti — хлеб\nsetelah — после\nsetelah itu — после этого\npulang — возвращаться домой\npermisi — извините; разрешите\ndi mana — где\nsebelah — сторона; рядом с\nkiri — левый; слева\njauh — далёкий; далеко\nsini — здесь\ndari sini — отсюда\nsilakan — пожалуйста (приглашение к действию)\njalan — дорога; идти пешком\nlurus — прямой; прямо\nterima kasih — спасибо\nsama-sama — пожалуйста (ответ на благодарность)",
+          "pages": []
+        }
+      ]
+    }
+  ],
+  "dictionaryEntries": 383
+}

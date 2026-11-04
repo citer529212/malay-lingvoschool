@@ -1,0 +1,1917 @@
+[
+  {
+    "word": "saya",
+    "translation": "я",
+    "lang": "id"
+  },
+  {
+    "word": "я",
+    "translation": "saya",
+    "lang": "ru"
+  },
+  {
+    "word": "Anda",
+    "translation": "Вы",
+    "lang": "id"
+  },
+  {
+    "word": "Вы",
+    "translation": "Anda",
+    "lang": "ru"
+  },
+  {
+    "word": "dia",
+    "translation": "он, она",
+    "lang": "id"
+  },
+  {
+    "word": "он, она",
+    "translation": "dia",
+    "lang": "ru"
+  },
+  {
+    "word": "kami",
+    "translation": "мы (без собеседника)",
+    "lang": "id"
+  },
+  {
+    "word": "мы (без собеседника)",
+    "translation": "kami",
+    "lang": "ru"
+  },
+  {
+    "word": "kita",
+    "translation": "мы (с собеседником)",
+    "lang": "id"
+  },
+  {
+    "word": "мы (с собеседником)",
+    "translation": "kita",
+    "lang": "ru"
+  },
+  {
+    "word": "mereka",
+    "translation": "они",
+    "lang": "id"
+  },
+  {
+    "word": "они",
+    "translation": "mereka",
+    "lang": "ru"
+  },
+  {
+    "word": "ini",
+    "translation": "это; этот",
+    "lang": "id"
+  },
+  {
+    "word": "это",
+    "translation": "ini",
+    "lang": "ru"
+  },
+  {
+    "word": "этот",
+    "translation": "ini",
+    "lang": "ru"
+  },
+  {
+    "word": "itu",
+    "translation": "то; тот",
+    "lang": "id"
+  },
+  {
+    "word": "то",
+    "translation": "itu",
+    "lang": "ru"
+  },
+  {
+    "word": "тот",
+    "translation": "itu",
+    "lang": "ru"
+  },
+  {
+    "word": "nama",
+    "translation": "имя",
+    "lang": "id"
+  },
+  {
+    "word": "имя",
+    "translation": "nama",
+    "lang": "ru"
+  },
+  {
+    "word": "namanya",
+    "translation": "его/её зовут; его/её имя",
+    "lang": "id"
+  },
+  {
+    "word": "его/её зовут",
+    "translation": "namanya",
+    "lang": "ru"
+  },
+  {
+    "word": "его/её имя",
+    "translation": "namanya",
+    "lang": "ru"
+  },
+  {
+    "word": "dari",
+    "translation": "из; от",
+    "lang": "id"
+  },
+  {
+    "word": "из",
+    "translation": "dari",
+    "lang": "ru"
+  },
+  {
+    "word": "от",
+    "translation": "dari",
+    "lang": "ru"
+  },
+  {
+    "word": "Rusia",
+    "translation": "Россия",
+    "lang": "id"
+  },
+  {
+    "word": "Россия",
+    "translation": "Rusia",
+    "lang": "ru"
+  },
+  {
+    "word": "Indonesia",
+    "translation": "Индонезия",
+    "lang": "id"
+  },
+  {
+    "word": "Индонезия",
+    "translation": "Indonesia",
+    "lang": "ru"
+  },
+  {
+    "word": "bahasa",
+    "translation": "язык",
+    "lang": "id"
+  },
+  {
+    "word": "язык",
+    "translation": "bahasa",
+    "lang": "ru"
+  },
+  {
+    "word": "belajar",
+    "translation": "учиться; изучать",
+    "lang": "id"
+  },
+  {
+    "word": "учиться",
+    "translation": "belajar",
+    "lang": "ru"
+  },
+  {
+    "word": "изучать",
+    "translation": "belajar",
+    "lang": "ru"
+  },
+  {
+    "word": "teman",
+    "translation": "друг",
+    "lang": "id"
+  },
+  {
+    "word": "друг",
+    "translation": "teman",
+    "lang": "ru"
+  },
+  {
+    "word": "selamat",
+    "translation": "благополучный; часть формул приветствия",
+    "lang": "id"
+  },
+  {
+    "word": "благополучный",
+    "translation": "selamat",
+    "lang": "ru"
+  },
+  {
+    "word": "часть формул приветствия",
+    "translation": "selamat",
+    "lang": "ru"
+  },
+  {
+    "word": "pagi",
+    "translation": "утро",
+    "lang": "id"
+  },
+  {
+    "word": "утро",
+    "translation": "pagi",
+    "lang": "ru"
+  },
+  {
+    "word": "selamat pagi",
+    "translation": "доброе утро",
+    "lang": "id"
+  },
+  {
+    "word": "доброе утро",
+    "translation": "selamat pagi",
+    "lang": "ru"
+  },
+  {
+    "word": "siapa",
+    "translation": "кто",
+    "lang": "id"
+  },
+  {
+    "word": "кто",
+    "translation": "siapa",
+    "lang": "ru"
+  },
+  {
+    "word": "mana",
+    "translation": "который; где (в вопросительных сочетаниях)",
+    "lang": "id"
+  },
+  {
+    "word": "который",
+    "translation": "mana",
+    "lang": "ru"
+  },
+  {
+    "word": "где (в вопросительных сочетаниях)",
+    "translation": "mana",
+    "lang": "ru"
+  },
+  {
+    "word": "senang",
+    "translation": "рад; довольный",
+    "lang": "id"
+  },
+  {
+    "word": "рад",
+    "translation": "senang",
+    "lang": "ru"
+  },
+  {
+    "word": "довольный",
+    "translation": "senang",
+    "lang": "ru"
+  },
+  {
+    "word": "berkenalan",
+    "translation": "знакомиться",
+    "lang": "id"
+  },
+  {
+    "word": "знакомиться",
+    "translation": "berkenalan",
+    "lang": "ru"
+  },
+  {
+    "word": "dengan",
+    "translation": "с",
+    "lang": "id"
+  },
+  {
+    "word": "с",
+    "translation": "dengan",
+    "lang": "ru"
+  },
+  {
+    "word": "mahasiswa",
+    "translation": "студент",
+    "lang": "id"
+  },
+  {
+    "word": "студент",
+    "translation": "mahasiswa",
+    "lang": "ru"
+  },
+  {
+    "word": "guru",
+    "translation": "учитель",
+    "lang": "id"
+  },
+  {
+    "word": "учитель",
+    "translation": "guru",
+    "lang": "ru"
+  },
+  {
+    "word": "di",
+    "translation": "в; на (местоположение)",
+    "lang": "id"
+  },
+  {
+    "word": "в",
+    "translation": "di",
+    "lang": "ru"
+  },
+  {
+    "word": "на (местоположение)",
+    "translation": "di",
+    "lang": "ru"
+  },
+  {
+    "word": "ke",
+    "translation": "в; к (направление)",
+    "lang": "id"
+  },
+  {
+    "word": "в",
+    "translation": "ke",
+    "lang": "ru"
+  },
+  {
+    "word": "к (направление)",
+    "translation": "ke",
+    "lang": "ru"
+  },
+  {
+    "word": "universitas",
+    "translation": "университет",
+    "lang": "id"
+  },
+  {
+    "word": "университет",
+    "translation": "universitas",
+    "lang": "ru"
+  },
+  {
+    "word": "setiap",
+    "translation": "каждый",
+    "lang": "id"
+  },
+  {
+    "word": "каждый",
+    "translation": "setiap",
+    "lang": "ru"
+  },
+  {
+    "word": "membaca",
+    "translation": "читать",
+    "lang": "id"
+  },
+  {
+    "word": "читать",
+    "translation": "membaca",
+    "lang": "ru"
+  },
+  {
+    "word": "baca",
+    "translation": "читать (основа)",
+    "lang": "id"
+  },
+  {
+    "word": "читать (основа)",
+    "translation": "baca",
+    "lang": "ru"
+  },
+  {
+    "word": "buku",
+    "translation": "книга",
+    "lang": "id"
+  },
+  {
+    "word": "книга",
+    "translation": "buku",
+    "lang": "ru"
+  },
+  {
+    "word": "menulis",
+    "translation": "писать",
+    "lang": "id"
+  },
+  {
+    "word": "писать",
+    "translation": "menulis",
+    "lang": "ru"
+  },
+  {
+    "word": "tulis",
+    "translation": "писать (основа)",
+    "lang": "id"
+  },
+  {
+    "word": "писать (основа)",
+    "translation": "tulis",
+    "lang": "ru"
+  },
+  {
+    "word": "kelas",
+    "translation": "класс; занятие",
+    "lang": "id"
+  },
+  {
+    "word": "класс",
+    "translation": "kelas",
+    "lang": "ru"
+  },
+  {
+    "word": "занятие",
+    "translation": "kelas",
+    "lang": "ru"
+  },
+  {
+    "word": "berbicara",
+    "translation": "говорить",
+    "lang": "id"
+  },
+  {
+    "word": "говорить",
+    "translation": "berbicara",
+    "lang": "ru"
+  },
+  {
+    "word": "hari",
+    "translation": "день",
+    "lang": "id"
+  },
+  {
+    "word": "день",
+    "translation": "hari",
+    "lang": "ru"
+  },
+  {
+    "word": "hari ini",
+    "translation": "сегодня",
+    "lang": "id"
+  },
+  {
+    "word": "сегодня",
+    "translation": "hari ini",
+    "lang": "ru"
+  },
+  {
+    "word": "tidak",
+    "translation": "не (при глаголах и признаках)",
+    "lang": "id"
+  },
+  {
+    "word": "не (при глаголах и признаках)",
+    "translation": "tidak",
+    "lang": "ru"
+  },
+  {
+    "word": "bukan",
+    "translation": "не (при именах)",
+    "lang": "id"
+  },
+  {
+    "word": "не (при именах)",
+    "translation": "bukan",
+    "lang": "ru"
+  },
+  {
+    "word": "bekerja",
+    "translation": "работать",
+    "lang": "id"
+  },
+  {
+    "word": "работать",
+    "translation": "bekerja",
+    "lang": "ru"
+  },
+  {
+    "word": "kerja",
+    "translation": "работа",
+    "lang": "id"
+  },
+  {
+    "word": "работа",
+    "translation": "kerja",
+    "lang": "ru"
+  },
+  {
+    "word": "rumah",
+    "translation": "дом",
+    "lang": "id"
+  },
+  {
+    "word": "дом",
+    "translation": "rumah",
+    "lang": "ru"
+  },
+  {
+    "word": "apa",
+    "translation": "что",
+    "lang": "id"
+  },
+  {
+    "word": "что",
+    "translation": "apa",
+    "lang": "ru"
+  },
+  {
+    "word": "yang",
+    "translation": "который; показатель определительной конструкции",
+    "lang": "id"
+  },
+  {
+    "word": "который",
+    "translation": "yang",
+    "lang": "ru"
+  },
+  {
+    "word": "показатель определительной конструкции",
+    "translation": "yang",
+    "lang": "ru"
+  },
+  {
+    "word": "lakukan",
+    "translation": "делать; выполнять",
+    "lang": "id"
+  },
+  {
+    "word": "делать",
+    "translation": "lakukan",
+    "lang": "ru"
+  },
+  {
+    "word": "выполнять",
+    "translation": "lakukan",
+    "lang": "ru"
+  },
+  {
+    "word": "apakah",
+    "translation": "вопросительная частица",
+    "lang": "id"
+  },
+  {
+    "word": "вопросительная частица",
+    "translation": "apakah",
+    "lang": "ru"
+  },
+  {
+    "word": "ya",
+    "translation": "да",
+    "lang": "id"
+  },
+  {
+    "word": "да",
+    "translation": "ya",
+    "lang": "ru"
+  },
+  {
+    "word": "tinggal",
+    "translation": "жить; оставаться",
+    "lang": "id"
+  },
+  {
+    "word": "жить",
+    "translation": "tinggal",
+    "lang": "ru"
+  },
+  {
+    "word": "оставаться",
+    "translation": "tinggal",
+    "lang": "ru"
+  },
+  {
+    "word": "Jakarta",
+    "translation": "Джакарта",
+    "lang": "id"
+  },
+  {
+    "word": "Джакарта",
+    "translation": "Jakarta",
+    "lang": "ru"
+  },
+  {
+    "word": "dekat",
+    "translation": "близкий; рядом",
+    "lang": "id"
+  },
+  {
+    "word": "близкий",
+    "translation": "dekat",
+    "lang": "ru"
+  },
+  {
+    "word": "рядом",
+    "translation": "dekat",
+    "lang": "ru"
+  },
+  {
+    "word": "stasiun",
+    "translation": "станция; вокзал",
+    "lang": "id"
+  },
+  {
+    "word": "станция",
+    "translation": "stasiun",
+    "lang": "ru"
+  },
+  {
+    "word": "вокзал",
+    "translation": "stasiun",
+    "lang": "ru"
+  },
+  {
+    "word": "depan",
+    "translation": "передняя сторона",
+    "lang": "id"
+  },
+  {
+    "word": "передняя сторона",
+    "translation": "depan",
+    "lang": "ru"
+  },
+  {
+    "word": "di depan",
+    "translation": "перед",
+    "lang": "id"
+  },
+  {
+    "word": "перед",
+    "translation": "di depan",
+    "lang": "ru"
+  },
+  {
+    "word": "ada",
+    "translation": "есть; находиться",
+    "lang": "id"
+  },
+  {
+    "word": "есть",
+    "translation": "ada",
+    "lang": "ru"
+  },
+  {
+    "word": "находиться",
+    "translation": "ada",
+    "lang": "ru"
+  },
+  {
+    "word": "toko",
+    "translation": "магазин",
+    "lang": "id"
+  },
+  {
+    "word": "магазин",
+    "translation": "toko",
+    "lang": "ru"
+  },
+  {
+    "word": "pergi",
+    "translation": "идти; ехать; уходить",
+    "lang": "id"
+  },
+  {
+    "word": "идти",
+    "translation": "pergi",
+    "lang": "ru"
+  },
+  {
+    "word": "ехать",
+    "translation": "pergi",
+    "lang": "ru"
+  },
+  {
+    "word": "уходить",
+    "translation": "pergi",
+    "lang": "ru"
+  },
+  {
+    "word": "membeli",
+    "translation": "покупать",
+    "lang": "id"
+  },
+  {
+    "word": "покупать",
+    "translation": "membeli",
+    "lang": "ru"
+  },
+  {
+    "word": "beli",
+    "translation": "покупать (основа)",
+    "lang": "id"
+  },
+  {
+    "word": "покупать (основа)",
+    "translation": "beli",
+    "lang": "ru"
+  },
+  {
+    "word": "air",
+    "translation": "вода",
+    "lang": "id"
+  },
+  {
+    "word": "вода",
+    "translation": "air",
+    "lang": "ru"
+  },
+  {
+    "word": "dan",
+    "translation": "и",
+    "lang": "id"
+  },
+  {
+    "word": "и",
+    "translation": "dan",
+    "lang": "ru"
+  },
+  {
+    "word": "roti",
+    "translation": "хлеб",
+    "lang": "id"
+  },
+  {
+    "word": "хлеб",
+    "translation": "roti",
+    "lang": "ru"
+  },
+  {
+    "word": "setelah",
+    "translation": "после",
+    "lang": "id"
+  },
+  {
+    "word": "после",
+    "translation": "setelah",
+    "lang": "ru"
+  },
+  {
+    "word": "setelah itu",
+    "translation": "после этого",
+    "lang": "id"
+  },
+  {
+    "word": "после этого",
+    "translation": "setelah itu",
+    "lang": "ru"
+  },
+  {
+    "word": "pulang",
+    "translation": "возвращаться домой",
+    "lang": "id"
+  },
+  {
+    "word": "возвращаться домой",
+    "translation": "pulang",
+    "lang": "ru"
+  },
+  {
+    "word": "permisi",
+    "translation": "извините; разрешите",
+    "lang": "id"
+  },
+  {
+    "word": "извините",
+    "translation": "permisi",
+    "lang": "ru"
+  },
+  {
+    "word": "разрешите",
+    "translation": "permisi",
+    "lang": "ru"
+  },
+  {
+    "word": "di mana",
+    "translation": "где",
+    "lang": "id"
+  },
+  {
+    "word": "где",
+    "translation": "di mana",
+    "lang": "ru"
+  },
+  {
+    "word": "sebelah",
+    "translation": "сторона; рядом с",
+    "lang": "id"
+  },
+  {
+    "word": "сторона",
+    "translation": "sebelah",
+    "lang": "ru"
+  },
+  {
+    "word": "рядом с",
+    "translation": "sebelah",
+    "lang": "ru"
+  },
+  {
+    "word": "kiri",
+    "translation": "левый; слева",
+    "lang": "id"
+  },
+  {
+    "word": "левый",
+    "translation": "kiri",
+    "lang": "ru"
+  },
+  {
+    "word": "слева",
+    "translation": "kiri",
+    "lang": "ru"
+  },
+  {
+    "word": "kanan",
+    "translation": "правый; справа",
+    "lang": "id"
+  },
+  {
+    "word": "правый",
+    "translation": "kanan",
+    "lang": "ru"
+  },
+  {
+    "word": "справа",
+    "translation": "kanan",
+    "lang": "ru"
+  },
+  {
+    "word": "jauh",
+    "translation": "далёкий; далеко",
+    "lang": "id"
+  },
+  {
+    "word": "далёкий",
+    "translation": "jauh",
+    "lang": "ru"
+  },
+  {
+    "word": "далеко",
+    "translation": "jauh",
+    "lang": "ru"
+  },
+  {
+    "word": "sini",
+    "translation": "здесь",
+    "lang": "id"
+  },
+  {
+    "word": "здесь",
+    "translation": "sini",
+    "lang": "ru"
+  },
+  {
+    "word": "dari sini",
+    "translation": "отсюда",
+    "lang": "id"
+  },
+  {
+    "word": "отсюда",
+    "translation": "dari sini",
+    "lang": "ru"
+  },
+  {
+    "word": "silakan",
+    "translation": "пожалуйста (приглашение к действию)",
+    "lang": "id"
+  },
+  {
+    "word": "пожалуйста (приглашение к действию)",
+    "translation": "silakan",
+    "lang": "ru"
+  },
+  {
+    "word": "jalan",
+    "translation": "дорога; идти пешком",
+    "lang": "id"
+  },
+  {
+    "word": "дорога",
+    "translation": "jalan",
+    "lang": "ru"
+  },
+  {
+    "word": "идти пешком",
+    "translation": "jalan",
+    "lang": "ru"
+  },
+  {
+    "word": "lurus",
+    "translation": "прямой; прямо",
+    "lang": "id"
+  },
+  {
+    "word": "прямой",
+    "translation": "lurus",
+    "lang": "ru"
+  },
+  {
+    "word": "прямо",
+    "translation": "lurus",
+    "lang": "ru"
+  },
+  {
+    "word": "terima kasih",
+    "translation": "спасибо",
+    "lang": "id"
+  },
+  {
+    "word": "спасибо",
+    "translation": "terima kasih",
+    "lang": "ru"
+  },
+  {
+    "word": "sama-sama",
+    "translation": "пожалуйста (ответ на благодарность)",
+    "lang": "id"
+  },
+  {
+    "word": "пожалуйста (ответ на благодарность)",
+    "translation": "sama-sama",
+    "lang": "ru"
+  },
+  {
+    "word": "berita",
+    "translation": "новость; новости",
+    "lang": "id"
+  },
+  {
+    "word": "новость",
+    "translation": "berita",
+    "lang": "ru"
+  },
+  {
+    "word": "новости",
+    "translation": "berita",
+    "lang": "ru"
+  },
+  {
+    "word": "negara",
+    "translation": "страна; государство",
+    "lang": "id"
+  },
+  {
+    "word": "страна",
+    "translation": "negara",
+    "lang": "ru"
+  },
+  {
+    "word": "государство",
+    "translation": "negara",
+    "lang": "ru"
+  },
+  {
+    "word": "pemerintah",
+    "translation": "правительство",
+    "lang": "id"
+  },
+  {
+    "word": "правительство",
+    "translation": "pemerintah",
+    "lang": "ru"
+  },
+  {
+    "word": "masyarakat",
+    "translation": "общество; население",
+    "lang": "id"
+  },
+  {
+    "word": "общество",
+    "translation": "masyarakat",
+    "lang": "ru"
+  },
+  {
+    "word": "население",
+    "translation": "masyarakat",
+    "lang": "ru"
+  },
+  {
+    "word": "ekonomi",
+    "translation": "экономика",
+    "lang": "id"
+  },
+  {
+    "word": "экономика",
+    "translation": "ekonomi",
+    "lang": "ru"
+  },
+  {
+    "word": "internasional",
+    "translation": "международный",
+    "lang": "id"
+  },
+  {
+    "word": "международный",
+    "translation": "internasional",
+    "lang": "ru"
+  },
+  {
+    "word": "kerja sama",
+    "translation": "сотрудничество",
+    "lang": "id"
+  },
+  {
+    "word": "сотрудничество",
+    "translation": "kerja sama",
+    "lang": "ru"
+  },
+  {
+    "word": "keamanan",
+    "translation": "безопасность",
+    "lang": "id"
+  },
+  {
+    "word": "безопасность",
+    "translation": "keamanan",
+    "lang": "ru"
+  },
+  {
+    "word": "perdamaian",
+    "translation": "мир (отсутствие войны)",
+    "lang": "id"
+  },
+  {
+    "word": "мир (отсутствие войны)",
+    "translation": "perdamaian",
+    "lang": "ru"
+  },
+  {
+    "word": "bantuan",
+    "translation": "помощь",
+    "lang": "id"
+  },
+  {
+    "word": "помощь",
+    "translation": "bantuan",
+    "lang": "ru"
+  },
+  {
+    "word": "kemanusiaan",
+    "translation": "гуманность; гуманитарная сфера",
+    "lang": "id"
+  },
+  {
+    "word": "гуманность",
+    "translation": "kemanusiaan",
+    "lang": "ru"
+  },
+  {
+    "word": "гуманитарная сфера",
+    "translation": "kemanusiaan",
+    "lang": "ru"
+  },
+  {
+    "word": "bantuan kemanusiaan",
+    "translation": "гуманитарная помощь",
+    "lang": "id"
+  },
+  {
+    "word": "гуманитарная помощь",
+    "translation": "bantuan kemanusiaan",
+    "lang": "ru"
+  },
+  {
+    "word": "bencana",
+    "translation": "бедствие",
+    "lang": "id"
+  },
+  {
+    "word": "бедствие",
+    "translation": "bencana",
+    "lang": "ru"
+  },
+  {
+    "word": "penduduk",
+    "translation": "жители; население",
+    "lang": "id"
+  },
+  {
+    "word": "жители",
+    "translation": "penduduk",
+    "lang": "ru"
+  },
+  {
+    "word": "население",
+    "translation": "penduduk",
+    "lang": "ru"
+  },
+  {
+    "word": "perundingan",
+    "translation": "переговоры",
+    "lang": "id"
+  },
+  {
+    "word": "переговоры",
+    "translation": "perundingan",
+    "lang": "ru"
+  },
+  {
+    "word": "perjanjian",
+    "translation": "соглашение",
+    "lang": "id"
+  },
+  {
+    "word": "соглашение",
+    "translation": "perjanjian",
+    "lang": "ru"
+  },
+  {
+    "word": "perbatasan",
+    "translation": "граница",
+    "lang": "id"
+  },
+  {
+    "word": "граница",
+    "translation": "perbatasan",
+    "lang": "ru"
+  },
+  {
+    "word": "pertahanan",
+    "translation": "оборона",
+    "lang": "id"
+  },
+  {
+    "word": "оборона",
+    "translation": "pertahanan",
+    "lang": "ru"
+  },
+  {
+    "word": "angkatan bersenjata",
+    "translation": "вооружённые силы",
+    "lang": "id"
+  },
+  {
+    "word": "вооружённые силы",
+    "translation": "angkatan bersenjata",
+    "lang": "ru"
+  },
+  {
+    "word": "angkatan darat",
+    "translation": "сухопутные войска",
+    "lang": "id"
+  },
+  {
+    "word": "сухопутные войска",
+    "translation": "angkatan darat",
+    "lang": "ru"
+  },
+  {
+    "word": "angkatan laut",
+    "translation": "военно-морские силы",
+    "lang": "id"
+  },
+  {
+    "word": "военно-морские силы",
+    "translation": "angkatan laut",
+    "lang": "ru"
+  },
+  {
+    "word": "angkatan udara",
+    "translation": "военно-воздушные силы",
+    "lang": "id"
+  },
+  {
+    "word": "военно-воздушные силы",
+    "translation": "angkatan udara",
+    "lang": "ru"
+  },
+  {
+    "word": "latihan",
+    "translation": "учение; упражнение",
+    "lang": "id"
+  },
+  {
+    "word": "учение",
+    "translation": "latihan",
+    "lang": "ru"
+  },
+  {
+    "word": "упражнение",
+    "translation": "latihan",
+    "lang": "ru"
+  },
+  {
+    "word": "pasukan",
+    "translation": "войска; подразделение",
+    "lang": "id"
+  },
+  {
+    "word": "войска",
+    "translation": "pasukan",
+    "lang": "ru"
+  },
+  {
+    "word": "подразделение",
+    "translation": "pasukan",
+    "lang": "ru"
+  },
+  {
+    "word": "komunikasi",
+    "translation": "связь; коммуникация",
+    "lang": "id"
+  },
+  {
+    "word": "связь",
+    "translation": "komunikasi",
+    "lang": "ru"
+  },
+  {
+    "word": "коммуникация",
+    "translation": "komunikasi",
+    "lang": "ru"
+  },
+  {
+    "word": "laporan",
+    "translation": "доклад; отчёт",
+    "lang": "id"
+  },
+  {
+    "word": "доклад",
+    "translation": "laporan",
+    "lang": "ru"
+  },
+  {
+    "word": "отчёт",
+    "translation": "laporan",
+    "lang": "ru"
+  },
+  {
+    "word": "petugas",
+    "translation": "сотрудник; дежурный",
+    "lang": "id"
+  },
+  {
+    "word": "сотрудник",
+    "translation": "petugas",
+    "lang": "ru"
+  },
+  {
+    "word": "дежурный",
+    "translation": "petugas",
+    "lang": "ru"
+  },
+  {
+    "word": "evakuasi",
+    "translation": "эвакуация",
+    "lang": "id"
+  },
+  {
+    "word": "эвакуация",
+    "translation": "evakuasi",
+    "lang": "ru"
+  },
+  {
+    "word": "pelabuhan",
+    "translation": "порт",
+    "lang": "id"
+  },
+  {
+    "word": "порт",
+    "translation": "pelabuhan",
+    "lang": "ru"
+  },
+  {
+    "word": "kapal",
+    "translation": "корабль",
+    "lang": "id"
+  },
+  {
+    "word": "корабль",
+    "translation": "kapal",
+    "lang": "ru"
+  },
+  {
+    "word": "pesawat",
+    "translation": "самолёт",
+    "lang": "id"
+  },
+  {
+    "word": "самолёт",
+    "translation": "pesawat",
+    "lang": "ru"
+  },
+  {
+    "word": "udara",
+    "translation": "воздух",
+    "lang": "id"
+  },
+  {
+    "word": "воздух",
+    "translation": "udara",
+    "lang": "ru"
+  },
+  {
+    "word": "laut",
+    "translation": "море",
+    "lang": "id"
+  },
+  {
+    "word": "море",
+    "translation": "laut",
+    "lang": "ru"
+  },
+  {
+    "word": "darat",
+    "translation": "суша",
+    "lang": "id"
+  },
+  {
+    "word": "суша",
+    "translation": "darat",
+    "lang": "ru"
+  },
+  {
+    "word": "keselamatan",
+    "translation": "безопасность; сохранность",
+    "lang": "id"
+  },
+  {
+    "word": "безопасность",
+    "translation": "keselamatan",
+    "lang": "ru"
+  },
+  {
+    "word": "сохранность",
+    "translation": "keselamatan",
+    "lang": "ru"
+  },
+  {
+    "word": "operasi",
+    "translation": "операция",
+    "lang": "id"
+  },
+  {
+    "word": "операция",
+    "translation": "operasi",
+    "lang": "ru"
+  },
+  {
+    "word": "tim",
+    "translation": "команда; группа",
+    "lang": "id"
+  },
+  {
+    "word": "команда",
+    "translation": "tim",
+    "lang": "ru"
+  },
+  {
+    "word": "группа",
+    "translation": "tim",
+    "lang": "ru"
+  },
+  {
+    "word": "medis",
+    "translation": "медицинский",
+    "lang": "id"
+  },
+  {
+    "word": "медицинский",
+    "translation": "medis",
+    "lang": "ru"
+  },
+  {
+    "word": "obat",
+    "translation": "лекарство",
+    "lang": "id"
+  },
+  {
+    "word": "лекарство",
+    "translation": "obat",
+    "lang": "ru"
+  },
+  {
+    "word": "korban",
+    "translation": "пострадавший; жертва",
+    "lang": "id"
+  },
+  {
+    "word": "пострадавший",
+    "translation": "korban",
+    "lang": "ru"
+  },
+  {
+    "word": "жертва",
+    "translation": "korban",
+    "lang": "ru"
+  },
+  {
+    "word": "informasi",
+    "translation": "информация",
+    "lang": "id"
+  },
+  {
+    "word": "информация",
+    "translation": "informasi",
+    "lang": "ru"
+  },
+  {
+    "word": "resmi",
+    "translation": "официальный",
+    "lang": "id"
+  },
+  {
+    "word": "официальный",
+    "translation": "resmi",
+    "lang": "ru"
+  },
+  {
+    "word": "sumber",
+    "translation": "источник",
+    "lang": "id"
+  },
+  {
+    "word": "источник",
+    "translation": "sumber",
+    "lang": "ru"
+  },
+  {
+    "word": "terbaru",
+    "translation": "новейший",
+    "lang": "id"
+  },
+  {
+    "word": "новейший",
+    "translation": "terbaru",
+    "lang": "ru"
+  },
+  {
+    "word": "politik",
+    "translation": "политика; политический",
+    "lang": "id"
+  },
+  {
+    "word": "политика",
+    "translation": "politik",
+    "lang": "ru"
+  },
+  {
+    "word": "политический",
+    "translation": "politik",
+    "lang": "ru"
+  },
+  {
+    "word": "hubungan",
+    "translation": "отношения; связь",
+    "lang": "id"
+  },
+  {
+    "word": "отношения",
+    "translation": "hubungan",
+    "lang": "ru"
+  },
+  {
+    "word": "связь",
+    "translation": "hubungan",
+    "lang": "ru"
+  },
+  {
+    "word": "tujuan",
+    "translation": "цель",
+    "lang": "id"
+  },
+  {
+    "word": "цель",
+    "translation": "tujuan",
+    "lang": "ru"
+  },
+  {
+    "word": "dialog",
+    "translation": "диалог",
+    "lang": "id"
+  },
+  {
+    "word": "диалог",
+    "translation": "dialog",
+    "lang": "ru"
+  },
+  {
+    "word": "damai",
+    "translation": "мирный",
+    "lang": "id"
+  },
+  {
+    "word": "мирный",
+    "translation": "damai",
+    "lang": "ru"
+  },
+  {
+    "word": "menjaga",
+    "translation": "охранять; поддерживать",
+    "lang": "id"
+  },
+  {
+    "word": "охранять",
+    "translation": "menjaga",
+    "lang": "ru"
+  },
+  {
+    "word": "поддерживать",
+    "translation": "menjaga",
+    "lang": "ru"
+  },
+  {
+    "word": "melindungi",
+    "translation": "защищать",
+    "lang": "id"
+  },
+  {
+    "word": "защищать",
+    "translation": "melindungi",
+    "lang": "ru"
+  },
+  {
+    "word": "membantu",
+    "translation": "помогать",
+    "lang": "id"
+  },
+  {
+    "word": "помогать",
+    "translation": "membantu",
+    "lang": "ru"
+  },
+  {
+    "word": "mengirim",
+    "translation": "отправлять",
+    "lang": "id"
+  },
+  {
+    "word": "отправлять",
+    "translation": "mengirim",
+    "lang": "ru"
+  },
+  {
+    "word": "menyampaikan",
+    "translation": "передавать; сообщать",
+    "lang": "id"
+  },
+  {
+    "word": "передавать",
+    "translation": "menyampaikan",
+    "lang": "ru"
+  },
+  {
+    "word": "сообщать",
+    "translation": "menyampaikan",
+    "lang": "ru"
+  },
+  {
+    "word": "melaporkan",
+    "translation": "докладывать; сообщать",
+    "lang": "id"
+  },
+  {
+    "word": "докладывать",
+    "translation": "melaporkan",
+    "lang": "ru"
+  },
+  {
+    "word": "сообщать",
+    "translation": "melaporkan",
+    "lang": "ru"
+  },
+  {
+    "word": "memeriksa",
+    "translation": "проверять",
+    "lang": "id"
+  },
+  {
+    "word": "проверять",
+    "translation": "memeriksa",
+    "lang": "ru"
+  },
+  {
+    "word": "memastikan",
+    "translation": "обеспечивать; удостоверяться",
+    "lang": "id"
+  },
+  {
+    "word": "обеспечивать",
+    "translation": "memastikan",
+    "lang": "ru"
+  },
+  {
+    "word": "удостоверяться",
+    "translation": "memastikan",
+    "lang": "ru"
+  },
+  {
+    "word": "harus",
+    "translation": "должен",
+    "lang": "id"
+  },
+  {
+    "word": "должен",
+    "translation": "harus",
+    "lang": "ru"
+  },
+  {
+    "word": "perlu",
+    "translation": "необходимо",
+    "lang": "id"
+  },
+  {
+    "word": "необходимо",
+    "translation": "perlu",
+    "lang": "ru"
+  },
+  {
+    "word": "dapat",
+    "translation": "мочь; получать",
+    "lang": "id"
+  },
+  {
+    "word": "мочь",
+    "translation": "dapat",
+    "lang": "ru"
+  },
+  {
+    "word": "получать",
+    "translation": "dapat",
+    "lang": "ru"
+  },
+  {
+    "word": "akan",
+    "translation": "показатель будущего",
+    "lang": "id"
+  },
+  {
+    "word": "показатель будущего",
+    "translation": "akan",
+    "lang": "ru"
+  },
+  {
+    "word": "sudah",
+    "translation": "уже",
+    "lang": "id"
+  },
+  {
+    "word": "уже",
+    "translation": "sudah",
+    "lang": "ru"
+  },
+  {
+    "word": "belum",
+    "translation": "ещё не",
+    "lang": "id"
+  },
+  {
+    "word": "ещё не",
+    "translation": "belum",
+    "lang": "ru"
+  },
+  {
+    "word": "sedang",
+    "translation": "показатель текущего действия",
+    "lang": "id"
+  },
+  {
+    "word": "показатель текущего действия",
+    "translation": "sedang",
+    "lang": "ru"
+  },
+  {
+    "word": "untuk",
+    "translation": "для; чтобы",
+    "lang": "id"
+  },
+  {
+    "word": "для",
+    "translation": "untuk",
+    "lang": "ru"
+  },
+  {
+    "word": "чтобы",
+    "translation": "untuk",
+    "lang": "ru"
+  },
+  {
+    "word": "karena",
+    "translation": "потому что",
+    "lang": "id"
+  },
+  {
+    "word": "потому что",
+    "translation": "karena",
+    "lang": "ru"
+  },
+  {
+    "word": "tetapi",
+    "translation": "но",
+    "lang": "id"
+  },
+  {
+    "word": "но",
+    "translation": "tetapi",
+    "lang": "ru"
+  },
+  {
+    "word": "jika",
+    "translation": "если",
+    "lang": "id"
+  },
+  {
+    "word": "если",
+    "translation": "jika",
+    "lang": "ru"
+  },
+  {
+    "word": "sebelum",
+    "translation": "до; прежде чем",
+    "lang": "id"
+  },
+  {
+    "word": "до",
+    "translation": "sebelum",
+    "lang": "ru"
+  },
+  {
+    "word": "прежде чем",
+    "translation": "sebelum",
+    "lang": "ru"
+  },
+  {
+    "word": "selama",
+    "translation": "во время; на протяжении",
+    "lang": "id"
+  },
+  {
+    "word": "во время",
+    "translation": "selama",
+    "lang": "ru"
+  },
+  {
+    "word": "на протяжении",
+    "translation": "selama",
+    "lang": "ru"
+  },
+  {
+    "word": "semua",
+    "translation": "все",
+    "lang": "id"
+  },
+  {
+    "word": "все",
+    "translation": "semua",
+    "lang": "ru"
+  },
+  {
+    "word": "baru",
+    "translation": "новый",
+    "lang": "id"
+  },
+  {
+    "word": "новый",
+    "translation": "baru",
+    "lang": "ru"
+  },
+  {
+    "word": "penting",
+    "translation": "важный",
+    "lang": "id"
+  },
+  {
+    "word": "важный",
+    "translation": "penting",
+    "lang": "ru"
+  },
+  {
+    "word": "baik",
+    "translation": "хороший",
+    "lang": "id"
+  },
+  {
+    "word": "хороший",
+    "translation": "baik",
+    "lang": "ru"
+  },
+  {
+    "word": "aman",
+    "translation": "безопасный",
+    "lang": "id"
+  },
+  {
+    "word": "безопасный",
+    "translation": "aman",
+    "lang": "ru"
+  },
+  {
+    "word": "cepat",
+    "translation": "быстрый",
+    "lang": "id"
+  },
+  {
+    "word": "быстрый",
+    "translation": "cepat",
+    "lang": "ru"
+  },
+  {
+    "word": "besar",
+    "translation": "большой",
+    "lang": "id"
+  },
+  {
+    "word": "большой",
+    "translation": "besar",
+    "lang": "ru"
+  },
+  {
+    "word": "kecil",
+    "translation": "маленький",
+    "lang": "id"
+  },
+  {
+    "word": "маленький",
+    "translation": "kecil",
+    "lang": "ru"
+  },
+  {
+    "word": "satu",
+    "translation": "один",
+    "lang": "id"
+  },
+  {
+    "word": "один",
+    "translation": "satu",
+    "lang": "ru"
+  },
+  {
+    "word": "dua",
+    "translation": "два",
+    "lang": "id"
+  },
+  {
+    "word": "два",
+    "translation": "dua",
+    "lang": "ru"
+  },
+  {
+    "word": "tiga",
+    "translation": "три",
+    "lang": "id"
+  },
+  {
+    "word": "три",
+    "translation": "tiga",
+    "lang": "ru"
+  },
+  {
+    "word": "empat",
+    "translation": "четыре",
+    "lang": "id"
+  },
+  {
+    "word": "четыре",
+    "translation": "empat",
+    "lang": "ru"
+  },
+  {
+    "word": "lima",
+    "translation": "пять",
+    "lang": "id"
+  },
+  {
+    "word": "пять",
+    "translation": "lima",
+    "lang": "ru"
+  },
+  {
+    "word": "enam",
+    "translation": "шесть",
+    "lang": "id"
+  },
+  {
+    "word": "шесть",
+    "translation": "enam",
+    "lang": "ru"
+  },
+  {
+    "word": "tujuh",
+    "translation": "семь",
+    "lang": "id"
+  },
+  {
+    "word": "семь",
+    "translation": "tujuh",
+    "lang": "ru"
+  },
+  {
+    "word": "delapan",
+    "translation": "восемь",
+    "lang": "id"
+  },
+  {
+    "word": "восемь",
+    "translation": "delapan",
+    "lang": "ru"
+  },
+  {
+    "word": "sembilan",
+    "translation": "девять",
+    "lang": "id"
+  },
+  {
+    "word": "девять",
+    "translation": "sembilan",
+    "lang": "ru"
+  },
+  {
+    "word": "sepuluh",
+    "translation": "десять",
+    "lang": "id"
+  },
+  {
+    "word": "десять",
+    "translation": "sepuluh",
+    "lang": "ru"
+  }
+]

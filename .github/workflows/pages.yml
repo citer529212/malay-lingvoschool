@@ -25,13 +25,19 @@ jobs:
           python3 scripts/verify_course.py
           node --check school.js
           node --check military-words.js
+          node --check indonesian-school.js
+          node --check indonesian-military-words.js
+          python3 scripts/verify_indonesian.py
       - name: Refresh Malay news
-        run: python3 scripts/update_news.py
+        run: |
+          python3 scripts/update_news.py
+          python3 scripts/update_news.py --indonesian
       - uses: actions/configure-pages@v5
       - name: Prepare public files
         run: |
           mkdir _site
           cp index.html military.html military-words.js school.js school.css news.json .nojekyll _site/
+          cp indonesian.html indonesian-school.js indonesian-military.html indonesian-military-words.js indonesian-news.json _site/
           cp -R assets _site/assets
       - uses: actions/upload-pages-artifact@v3
         with:
