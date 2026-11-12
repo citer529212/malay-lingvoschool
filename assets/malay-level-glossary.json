@@ -1,0 +1,837 @@
+[
+  {
+    "word": "aksesnya",
+    "translation": "доступ к нему; доступ к этим сведениям",
+    "lang": "ms"
+  },
+  {
+    "word": "ali",
+    "translation": "Али (имя)",
+    "lang": "ms"
+  },
+  {
+    "word": "an",
+    "translation": "суффикс -an, часто образует существительные",
+    "lang": "ms"
+  },
+  {
+    "word": "anggaran",
+    "translation": "оценка; смета; бюджет",
+    "lang": "ms"
+  },
+  {
+    "word": "bagaimanapun",
+    "translation": "однако; тем не менее",
+    "lang": "ms"
+  },
+  {
+    "word": "bahawa",
+    "translation": "что (союз)",
+    "lang": "ms"
+  },
+  {
+    "word": "begitu",
+    "translation": "так; таким образом",
+    "lang": "ms"
+  },
+  {
+    "word": "bekalan",
+    "translation": "запас; снабжение; предложение (на рынке)",
+    "lang": "ms"
+  },
+  {
+    "word": "berapa",
+    "translation": "сколько",
+    "lang": "ms"
+  },
+  {
+    "word": "berapakah",
+    "translation": "сколько? (вопрос с частицей -kah)",
+    "lang": "ms"
+  },
+  {
+    "word": "berbanding",
+    "translation": "по сравнению с",
+    "lang": "ms"
+  },
+  {
+    "word": "berhasrat",
+    "translation": "намереваться",
+    "lang": "ms"
+  },
+  {
+    "word": "bermaksud",
+    "translation": "означать; иметь в виду",
+    "lang": "ms"
+  },
+  {
+    "word": "berterusan",
+    "translation": "продолжаться; непрерывный",
+    "lang": "ms"
+  },
+  {
+    "word": "berunding",
+    "translation": "вести переговоры; консультироваться",
+    "lang": "ms"
+  },
+  {
+    "word": "bilakah",
+    "translation": "когда?",
+    "lang": "ms"
+  },
+  {
+    "word": "di",
+    "translation": "в; на (предлог места); di- — приставка пассива",
+    "lang": "ms"
+  },
+  {
+    "word": "diadakan",
+    "translation": "проводиться; быть организованным",
+    "lang": "ms"
+  },
+  {
+    "word": "diakses",
+    "translation": "быть доступным; получить доступ к чему-либо",
+    "lang": "ms"
+  },
+  {
+    "word": "dibaca",
+    "translation": "читаться; быть прочитанным",
+    "lang": "ms"
+  },
+  {
+    "word": "dibentangkan",
+    "translation": "быть представленным на рассмотрение",
+    "lang": "ms"
+  },
+  {
+    "word": "diberi",
+    "translation": "быть предоставленным; получить",
+    "lang": "ms"
+  },
+  {
+    "word": "dibuat",
+    "translation": "быть сделанным; быть принятым (о решении)",
+    "lang": "ms"
+  },
+  {
+    "word": "dicapai",
+    "translation": "быть достигнутым",
+    "lang": "ms"
+  },
+  {
+    "word": "dihormati",
+    "translation": "уважаемый; почитаемый",
+    "lang": "ms"
+  },
+  {
+    "word": "dijangka",
+    "translation": "ожидается; по прогнозу",
+    "lang": "ms"
+  },
+  {
+    "word": "dimaklumkan",
+    "translation": "сообщается; быть уведомленным",
+    "lang": "ms"
+  },
+  {
+    "word": "diminta",
+    "translation": "быть запрошенным; кого-либо просят",
+    "lang": "ms"
+  },
+  {
+    "word": "dimuktamadkan",
+    "translation": "быть окончательно утверждённым",
+    "lang": "ms"
+  },
+  {
+    "word": "dipejabat",
+    "translation": "в офисе (нормативное написание: di pejabat)",
+    "lang": "ms"
+  },
+  {
+    "word": "diperiksa",
+    "translation": "быть проверенным",
+    "lang": "ms"
+  },
+  {
+    "word": "diperlukan",
+    "translation": "быть необходимым; требоваться",
+    "lang": "ms"
+  },
+  {
+    "word": "dipertimbangkan",
+    "translation": "быть рассмотренным; быть учтённым",
+    "lang": "ms"
+  },
+  {
+    "word": "diperuntukkan",
+    "translation": "быть выделенным; быть предусмотренным",
+    "lang": "ms"
+  },
+  {
+    "word": "dipindahkan",
+    "translation": "быть перемещённым; быть эвакуированным",
+    "lang": "ms"
+  },
+  {
+    "word": "dipulihkan",
+    "translation": "быть восстановленным",
+    "lang": "ms"
+  },
+  {
+    "word": "disahkan",
+    "translation": "быть подтверждённым; быть утверждённым",
+    "lang": "ms"
+  },
+  {
+    "word": "disediakan",
+    "translation": "быть подготовленным; быть предоставленным",
+    "lang": "ms"
+  },
+  {
+    "word": "diselesaikan",
+    "translation": "быть решённым; быть завершённым",
+    "lang": "ms"
+  },
+  {
+    "word": "disemak",
+    "translation": "быть проверенным; быть пересмотренным",
+    "lang": "ms"
+  },
+  {
+    "word": "ditampung",
+    "translation": "быть покрытым (о расходах); быть размещённым",
+    "lang": "ms"
+  },
+  {
+    "word": "ditandatangani",
+    "translation": "быть подписанным",
+    "lang": "ms"
+  },
+  {
+    "word": "diterbitkan",
+    "translation": "быть опубликованным",
+    "lang": "ms"
+  },
+  {
+    "word": "diterima",
+    "translation": "быть полученным; быть принятым",
+    "lang": "ms"
+  },
+  {
+    "word": "diteruskan",
+    "translation": "быть продолженным",
+    "lang": "ms"
+  },
+  {
+    "word": "ditetapkan",
+    "translation": "быть установленным",
+    "lang": "ms"
+  },
+  {
+    "word": "ditunda",
+    "translation": "быть отложенным; быть перенесённым",
+    "lang": "ms"
+  },
+  {
+    "word": "ditutup",
+    "translation": "быть закрытым",
+    "lang": "ms"
+  },
+  {
+    "word": "diumumkan",
+    "translation": "быть объявленным",
+    "lang": "ms"
+  },
+  {
+    "word": "eksport",
+    "translation": "экспорт",
+    "lang": "ms"
+  },
+  {
+    "word": "hadirin",
+    "translation": "присутствующие; участники",
+    "lang": "ms"
+  },
+  {
+    "word": "hendaklah",
+    "translation": "следует; надлежит",
+    "lang": "ms"
+  },
+  {
+    "word": "hubungi",
+    "translation": "свяжитесь с; обращайтесь к",
+    "lang": "ms"
+  },
+  {
+    "word": "ialah",
+    "translation": "это; является (именная связка)",
+    "lang": "ms"
+  },
+  {
+    "word": "institusi",
+    "translation": "учреждение; институт",
+    "lang": "ms"
+  },
+  {
+    "word": "jawatankuasa",
+    "translation": "комитет; комиссия",
+    "lang": "ms"
+  },
+  {
+    "word": "juruteknik",
+    "translation": "техник; технический специалист",
+    "lang": "ms"
+  },
+  {
+    "word": "kaedah",
+    "translation": "метод; способ",
+    "lang": "ms"
+  },
+  {
+    "word": "kajian",
+    "translation": "исследование; анализ",
+    "lang": "ms"
+  },
+  {
+    "word": "kakitangan",
+    "translation": "персонал; сотрудники",
+    "lang": "ms"
+  },
+  {
+    "word": "ke",
+    "translation": "в; к (направление)",
+    "lang": "ms"
+  },
+  {
+    "word": "kecuali",
+    "translation": "кроме; за исключением",
+    "lang": "ms"
+  },
+  {
+    "word": "kenyataan",
+    "translation": "заявление; утверждение",
+    "lang": "ms"
+  },
+  {
+    "word": "kesesakan",
+    "translation": "скопление; дорожные заторы",
+    "lang": "ms"
+  },
+  {
+    "word": "keuntungan",
+    "translation": "прибыль; выгода",
+    "lang": "ms"
+  },
+  {
+    "word": "kewajipan",
+    "translation": "обязанность",
+    "lang": "ms"
+  },
+  {
+    "word": "lebat",
+    "translation": "сильный (о дожде); густой",
+    "lang": "ms"
+  },
+  {
+    "word": "lebih",
+    "translation": "больше; более",
+    "lang": "ms"
+  },
+  {
+    "word": "lengkapkan",
+    "translation": "дополните; завершите",
+    "lang": "ms"
+  },
+  {
+    "word": "log",
+    "translation": "журнал событий; лог",
+    "lang": "ms"
+  },
+  {
+    "word": "majikan",
+    "translation": "работодатель",
+    "lang": "ms"
+  },
+  {
+    "word": "manakah",
+    "translation": "где?; который?",
+    "lang": "ms"
+  },
+  {
+    "word": "manakala",
+    "translation": "тогда как; в то время как",
+    "lang": "ms"
+  },
+  {
+    "word": "mari",
+    "translation": "давайте; пойдём",
+    "lang": "ms"
+  },
+  {
+    "word": "melaka",
+    "translation": "Малакка (город и штат)",
+    "lang": "ms"
+  },
+  {
+    "word": "melalui",
+    "translation": "через; посредством; проходить через",
+    "lang": "ms"
+  },
+  {
+    "word": "meluluskan",
+    "translation": "одобрять; утверждать",
+    "lang": "ms"
+  },
+  {
+    "word": "memaklumkan",
+    "translation": "сообщать; уведомлять",
+    "lang": "ms"
+  },
+  {
+    "word": "memastikan",
+    "translation": "убеждаться; обеспечивать",
+    "lang": "ms"
+  },
+  {
+    "word": "membentangkan",
+    "translation": "представлять на рассмотрение",
+    "lang": "ms"
+  },
+  {
+    "word": "membezakan",
+    "translation": "различать; разграничивать",
+    "lang": "ms"
+  },
+  {
+    "word": "membincangkan",
+    "translation": "обсуждать",
+    "lang": "ms"
+  },
+  {
+    "word": "meminta",
+    "translation": "просить; запрашивать",
+    "lang": "ms"
+  },
+  {
+    "word": "memperluas",
+    "translation": "расширять",
+    "lang": "ms"
+  },
+  {
+    "word": "memudahkan",
+    "translation": "облегчать; упрощать",
+    "lang": "ms"
+  },
+  {
+    "word": "memulangkan",
+    "translation": "возвращать",
+    "lang": "ms"
+  },
+  {
+    "word": "men",
+    "translation": "вариант глагольной приставки meN-",
+    "lang": "ms"
+  },
+  {
+    "word": "menamatkan",
+    "translation": "завершать; расторгать",
+    "lang": "ms"
+  },
+  {
+    "word": "menampung",
+    "translation": "покрывать расходы; вмещать",
+    "lang": "ms"
+  },
+  {
+    "word": "mencadangkan",
+    "translation": "предлагать; рекомендовать",
+    "lang": "ms"
+  },
+  {
+    "word": "mencatat",
+    "translation": "записывать; отмечать",
+    "lang": "ms"
+  },
+  {
+    "word": "mendaftar",
+    "translation": "регистрироваться; регистрировать",
+    "lang": "ms"
+  },
+  {
+    "word": "mendapatkan",
+    "translation": "получать; добывать",
+    "lang": "ms"
+  },
+  {
+    "word": "menegaskan",
+    "translation": "подчёркивать; настаивать",
+    "lang": "ms"
+  },
+  {
+    "word": "meneliti",
+    "translation": "тщательно изучать; рассматривать",
+    "lang": "ms"
+  },
+  {
+    "word": "menerbitkan",
+    "translation": "публиковать; издавать",
+    "lang": "ms"
+  },
+  {
+    "word": "meneruskan",
+    "translation": "продолжать",
+    "lang": "ms"
+  },
+  {
+    "word": "mengadakan",
+    "translation": "проводить; организовывать",
+    "lang": "ms"
+  },
+  {
+    "word": "mengakses",
+    "translation": "получать доступ к",
+    "lang": "ms"
+  },
+  {
+    "word": "mengalu-alukan",
+    "translation": "приветствовать",
+    "lang": "ms"
+  },
+  {
+    "word": "mengemukakan",
+    "translation": "представлять; выдвигать",
+    "lang": "ms"
+  },
+  {
+    "word": "mengenai",
+    "translation": "о; касательно",
+    "lang": "ms"
+  },
+  {
+    "word": "mengesahkan",
+    "translation": "подтверждать; утверждать",
+    "lang": "ms"
+  },
+  {
+    "word": "mengetahui",
+    "translation": "знать; узнавать",
+    "lang": "ms"
+  },
+  {
+    "word": "menghadiri",
+    "translation": "присутствовать на; посещать",
+    "lang": "ms"
+  },
+  {
+    "word": "menghalang",
+    "translation": "препятствовать",
+    "lang": "ms"
+  },
+  {
+    "word": "mengumumkan",
+    "translation": "объявлять",
+    "lang": "ms"
+  },
+  {
+    "word": "mengurangkan",
+    "translation": "сокращать; уменьшать",
+    "lang": "ms"
+  },
+  {
+    "word": "menilai",
+    "translation": "оценивать",
+    "lang": "ms"
+  },
+  {
+    "word": "meningkat",
+    "translation": "повышаться; расти",
+    "lang": "ms"
+  },
+  {
+    "word": "menjangkakan",
+    "translation": "ожидать; прогнозировать",
+    "lang": "ms"
+  },
+  {
+    "word": "menjejaskan",
+    "translation": "отрицательно влиять; затрагивать",
+    "lang": "ms"
+  },
+  {
+    "word": "menjelang",
+    "translation": "к; накануне; до наступления",
+    "lang": "ms"
+  },
+  {
+    "word": "menunggu",
+    "translation": "ждать; ожидать",
+    "lang": "ms"
+  },
+  {
+    "word": "menunjukkan",
+    "translation": "показывать; указывать",
+    "lang": "ms"
+  },
+  {
+    "word": "menurun",
+    "translation": "снижаться; падать",
+    "lang": "ms"
+  },
+  {
+    "word": "menyampaikan",
+    "translation": "передавать; излагать",
+    "lang": "ms"
+  },
+  {
+    "word": "menyemak",
+    "translation": "проверять; сверять",
+    "lang": "ms"
+  },
+  {
+    "word": "meskipun",
+    "translation": "хотя; несмотря на то что",
+    "lang": "ms"
+  },
+  {
+    "word": "notis",
+    "translation": "уведомление; извещение",
+    "lang": "ms"
+  },
+  {
+    "word": "pandangan",
+    "translation": "мнение; точка зрения; взгляд",
+    "lang": "ms"
+  },
+  {
+    "word": "pelaksanaan",
+    "translation": "осуществление; реализация",
+    "lang": "ms"
+  },
+  {
+    "word": "pembangkang",
+    "translation": "оппозиция",
+    "lang": "ms"
+  },
+  {
+    "word": "pembiayaan",
+    "translation": "финансирование",
+    "lang": "ms"
+  },
+  {
+    "word": "pembukaan",
+    "translation": "открытие; начало",
+    "lang": "ms"
+  },
+  {
+    "word": "penamatan",
+    "translation": "прекращение; расторжение",
+    "lang": "ms"
+  },
+  {
+    "word": "penganjur",
+    "translation": "организатор",
+    "lang": "ms"
+  },
+  {
+    "word": "penumpang",
+    "translation": "пассажир",
+    "lang": "ms"
+  },
+  {
+    "word": "permintaan",
+    "translation": "спрос; просьба; запрос",
+    "lang": "ms"
+  },
+  {
+    "word": "persatuan",
+    "translation": "ассоциация; объединение",
+    "lang": "ms"
+  },
+  {
+    "word": "pihak",
+    "translation": "сторона; участник",
+    "lang": "ms"
+  },
+  {
+    "word": "prinsip",
+    "translation": "принцип",
+    "lang": "ms"
+  },
+  {
+    "word": "program",
+    "translation": "программа",
+    "lang": "ms"
+  },
+  {
+    "word": "puan-puan",
+    "translation": "дамы; госпожи",
+    "lang": "ms"
+  },
+  {
+    "word": "puluh",
+    "translation": "десяток; показатель десятков",
+    "lang": "ms"
+  },
+  {
+    "word": "rakan-rakan",
+    "translation": "друзья; коллеги",
+    "lang": "ms"
+  },
+  {
+    "word": "raya",
+    "translation": "большой; главный; в majlis bandar raya — городской совет",
+    "lang": "ms"
+  },
+  {
+    "word": "rundingan",
+    "translation": "переговоры; консультации",
+    "lang": "ms"
+  },
+  {
+    "word": "sebarang",
+    "translation": "любой; какой бы то ни было",
+    "lang": "ms"
+  },
+  {
+    "word": "secawan",
+    "translation": "одна чашка; чашка чего-либо",
+    "lang": "ms"
+  },
+  {
+    "word": "sediakan",
+    "translation": "подготовьте; предоставьте",
+    "lang": "ms"
+  },
+  {
+    "word": "segelas",
+    "translation": "один стакан; стакан чего-либо",
+    "lang": "ms"
+  },
+  {
+    "word": "sehingga",
+    "translation": "до; вплоть до; так что",
+    "lang": "ms"
+  },
+  {
+    "word": "sekiranya",
+    "translation": "если; в случае если",
+    "lang": "ms"
+  },
+  {
+    "word": "sekurang-kurangnya",
+    "translation": "по меньшей мере; не менее",
+    "lang": "ms"
+  },
+  {
+    "word": "selagi",
+    "translation": "пока; до тех пор пока",
+    "lang": "ms"
+  },
+  {
+    "word": "selewat-lewatnya",
+    "translation": "не позднее",
+    "lang": "ms"
+  },
+  {
+    "word": "sendirinya",
+    "translation": "само по себе",
+    "lang": "ms"
+  },
+  {
+    "word": "sesi",
+    "translation": "сессия; заседание; сеанс",
+    "lang": "ms"
+  },
+  {
+    "word": "setakat",
+    "translation": "до; по состоянию на; в пределах",
+    "lang": "ms"
+  },
+  {
+    "word": "setengah",
+    "translation": "половина",
+    "lang": "ms"
+  },
+  {
+    "word": "siapakah",
+    "translation": "кто?",
+    "lang": "ms"
+  },
+  {
+    "word": "sila",
+    "translation": "пожалуйста (приглашение или инструкция)",
+    "lang": "ms"
+  },
+  {
+    "word": "status",
+    "translation": "статус; состояние",
+    "lang": "ms"
+  },
+  {
+    "word": "terlebih",
+    "translation": "прежде; более (terlebih dahulu — сначала)",
+    "lang": "ms"
+  },
+  {
+    "word": "terputus",
+    "translation": "прерваться; быть разорванным",
+    "lang": "ms"
+  },
+  {
+    "word": "tiba",
+    "translation": "прибыть; наступить",
+    "lang": "ms"
+  },
+  {
+    "word": "timbul",
+    "translation": "возникать; появляться",
+    "lang": "ms"
+  },
+  {
+    "word": "tuan-tuan",
+    "translation": "господа",
+    "lang": "ms"
+  },
+  {
+    "word": "umum",
+    "translation": "общий; публичный",
+    "lang": "ms"
+  },
+  {
+    "word": "unitnya",
+    "translation": "его подразделение; соответствующее подразделение",
+    "lang": "ms"
+  },
+  {
+    "word": "waktunya",
+    "translation": "его время; нужное время",
+    "lang": "ms"
+  },
+  {
+    "word": "wartawan",
+    "translation": "журналист",
+    "lang": "ms"
+  },
+  {
+    "word": "wayang",
+    "translation": "кино; театральное представление",
+    "lang": "ms"
+  },
+  {
+    "word": "penyelaras",
+    "translation": "координатор",
+    "lang": "ms"
+  },
+  {
+    "word": "pesakit",
+    "translation": "пациент",
+    "lang": "ms"
+  },
+  {
+    "word": "wakil",
+    "translation": "представитель",
+    "lang": "ms"
+  }
+]

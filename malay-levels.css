@@ -58,3 +58,16 @@
 }
 
 :root[data-malay-stage="c"] .panel { border-radius: 10px; }
+
+.level-choice-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 8px 10px;
+}
+.level-choice-row .btn { flex: 0 0 auto; }
+.level-choices .level-choice-row.level-correct .btn { border-color: #52713e; }
+.level-choices .level-choice-row.level-wrong .btn { border-color: #9f605a; }

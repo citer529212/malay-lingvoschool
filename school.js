@@ -15,7 +15,19 @@ function save(){try{localStorage.setItem(KEY,JSON.stringify(user))}catch{toast('
 function toast(msg){$('#toast').textContent=msg;$('#toast').hidden=false;clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').hidden=true,4000)}
 function button(label,action,primary=false){return `<button type="button" class="btn ${primary?'primary':''}" data-action="${action}">${label}</button>`}
 function heading(title,subtitle=''){return `<div class="pagehead"><h1>${esc(title)}</h1>${subtitle?`<p>${esc(subtitle)}</p>`:''}</div>`}
-function tokens(text){const re=/[\p{L}]+(?:['’\-][\p{L}]+)*/gu;let out='',start=0;for(const m of String(text||'').matchAll(re)){out+=esc(text.slice(start,m.index))+`<button type="button" class="tap-word" data-word="${esc(m[0])}" aria-label="Перевод: ${esc(m[0])}">${esc(m[0])}</button>`;start=m.index+m[0].length}return out+esc(text.slice(start))}
+function tokens(value, malayOnly=false){
+  const text=String(value??'');
+  const wordPattern=malayOnly
+    ? /(?<![\p{L}\p{N}])[\p{Script=Latin}]+(?:['’\-][\p{Script=Latin}]+)*(?![\p{L}\p{N}])/gu
+    : /[\p{L}]+(?:['’\-][\p{L}]+)*/gu;
+  let html='',start=0;
+  for(const match of text.matchAll(wordPattern)){
+    const word=esc(match[0]);
+    html+=esc(text.slice(start,match.index))+`<button type="button" class="tap-word" data-word="${word}" aria-label="Перевод: ${word}">${word}</button>`;
+    start=match.index+match[0].length;
+  }
+  return html+esc(text.slice(start));
+}
 function stageName(stage){return stage==='intro'?'Вводно-фонетический курс':stage==='basic'?'Основной курс':'Введение'}
 function lessonTitle(l){return l.number?`Урок ${l.number} · ${l.title}`:l.title}
 function lesson(){return course.lessons.find(x=>x.id===lessonId)||course.lessons.find(x=>x.id===user.lastLesson)||course.lessons[0]}
@@ -55,14 +67,141 @@ function audioCard(a){return `<article class="audio-card"><div class="audio-titl
 function audioSection(tracks,l){return `<div class="hint">Записи к ${l.stage==='basic'?'основному':'вводному'} уроку ${l.number}. Можно менять скорость, возвращаться на 10 секунд и включать повтор. Плеер загружает файл только при запуске.</div>`+(tracks.length?tracks.map(audioCard).join(''):'<div class="panel empty">В предоставленном наборе нет аудиофайлов к этому разделу.</div>')+`<section class="panel" style="margin-top:18px"><h2>Аудирование: услышать и записать</h2><p class="mini muted">Прослушайте фрагмент без текста, запишите услышанное, затем откройте «Тексты» или «Диалоги» для сверки.</p><textarea class="answer" data-draft="listen:${l.id}" aria-label="Запись по аудированию" placeholder="Что вы услышали?">${esc(user.drafts['listen:'+l.id]||'')}</textarea></section>`}
 function scanSection(l){return `<div class="hint">Оригинальные страницы урока: таблицы, транскрипция и расположение материалов сохранены на скане. Для перевода слов используйте текстовые разделы.</div>`+l.pages.map(n=>`<section class="panel"><h2>Страница ${n-1}</h2><img class="scan-page" loading="lazy" decoding="async" src="assets/book/${String(n).padStart(3,'0')}.webp" alt="Страница ${n-1}"></section>`).join('')}
 function listeningView(){const ls=course.lessons.filter(x=>x.stage===listeningStage&&x.number);let tracks=audios.filter(x=>x.stage===listeningStage&&(listeningLesson==='all'||x.lesson===+listeningLesson));return heading('Аудирование','Оригинальные записи к вводно-фонетическому и основному курсам. Тексты, диалоги, упражнения и слова.')+`<section class="panel"><div class="controls"><label>Курс<select id="audioStage" class="input"><option value="intro" ${listeningStage==='intro'?'selected':''}>Вводно-фонетический</option><option value="basic" ${listeningStage==='basic'?'selected':''}>Основной</option></select></label><label>Урок<select id="audioLesson" class="input"><option value="all">Все уроки</option>${ls.map(x=>`<option value="${x.number}" ${listeningLesson==x.number?'selected':''}>${x.number}. ${esc(x.title)}</option>`).join('')}</select></label></div><p class="mini muted">${tracks.length} записей · ${tracks.filter(t=>user.listened[t.id]).length} прослушано</p></section>${ls.filter(l=>listeningLesson==='all'||l.number===+listeningLesson).map(l=>{const a=tracks.filter(x=>x.lesson===l.number);return a.length?`<section class="panel"><div class="block-head"><h2>Урок ${l.number} · ${esc(l.title)}</h2><button class="btn small" data-lesson="${l.id}" data-open-part="audio">К уроку →</button></div>${a.map(audioCard).join('')}</section>`:''}).join('')}`}
-async function ensureDictionary(){if(dictPromise)return dictPromise;dictPromise=fetch('assets/dictionary.json').then(r=>{if(!r.ok)throw Error('Не удалось загрузить словарь.');return r.json()}).then(rows=>{dictRows=rows;for(const e of rows){const k=norm(e.word);if(!dictIndex[e.lang].has(k))dictIndex[e.lang].set(k,[]);dictIndex[e.lang].get(k).push(e)}return rows}).catch(e=>{dictPromise=null;throw e});return dictPromise}
+async function ensureDictionary(){
+  if(dictPromise)return dictPromise;
+  const main=fetch('assets/dictionary.json').then(response=>{
+    if(!response.ok)throw Error('Не удалось загрузить словарь.');
+    return response.json();
+  });
+  const supplement=window.MalayLevels
+    ? fetch('assets/malay-level-glossary.json?v=20261112').then(response=>response.ok?response.json():[]).catch(()=>[])
+    : Promise.resolve([]);
+  dictPromise=Promise.all([main,supplement]).then(([rows,glossary])=>{
+    dictRows=[...glossary,...rows];
+    for(const entry of dictRows){
+      const key=norm(entry.word);
+      const index=dictIndex[entry.lang];
+      if(!index.has(key))index.set(key,[]);
+      index.get(key).push(entry);
+    }
+    return dictRows;
+  }).catch(error=>{dictPromise=null;throw error;});
+  return dictPromise;
+}
 function baseCandidates(word){const s=norm(word),out=new Set();if(!/^[a-z-]+$/.test(s))return [];const repeated=s.match(/^([a-z]+)-\1$/);if(repeated)out.add(repeated[1]);const forms=new Set([s]);for(const suf of ['nya','lah','kah','pun','ku','mu','kan','an','i'])if(s.endsWith(suf)&&s.length-suf.length>=3)forms.add(s.slice(0,-suf.length));for(const f of [...forms]){out.add(f);for(const pre of ['meng','meny','men','mem','me','peng','peny','pen','pem','ber','bel','ter','per','pel','di','ke','se','pe'])if(f.startsWith(pre)&&f.length-pre.length>=3){const root=f.slice(pre.length);out.add(root);if(['meny','peny'].includes(pre))out.add('s'+root);if(['men','pen'].includes(pre))out.add('t'+root);if(['mem','pem'].includes(pre))out.add('p'+root);if(['meng','peng'].includes(pre))out.add('k'+root)}}out.delete(s);return [...out]}
 function lookup(q,lang,limit=30){const key=norm(q);if(!key)return [];const exact=dictIndex[lang].get(key)||[];if(exact.length)return exact.slice(0,limit).map(e=>({...e,match:'exact'}));let bases=[];if(lang==='ms')for(const k of baseCandidates(key))for(const e of dictIndex.ms.get(k)||[])bases.push({...e,match:'base'});if(bases.length)return bases.slice(0,limit);const found=[];for(const e of dictRows){if(e.lang===lang&&norm(e.word).startsWith(key)){found.push({...e,match:'prefix'});if(found.length===limit)break}}return found}
 function dictionaryView(){return heading('Словарь','Перевод слов по нажатию в учебнике и отдельный поиск по малайско-русскому и русско-малайскому словарю.')+`<section class="panel"><form id="dictionaryForm"><div class="controls"><label>Направление<select id="dictMode" class="input"><option value="ms" ${dictMode==='ms'?'selected':''}>Малайский → русский</option><option value="ru" ${dictMode==='ru'?'selected':''}>Русский → малайский</option></select></label><input class="input search-input" id="dictQuery" value="${esc(dictQuery)}" type="search" placeholder="Например: makan, membaca, семья…" aria-label="Поиск по словарю"><button class="btn primary" type="submit">Найти перевод</button></div></form><p class="mini muted">Точное совпадение показывается первым. Если форма не найдена, проверяются возможные основы; такие подсказки помечены.</p><a class="btn" href="assets/dictionary-full.html" target="_blank" rel="noopener">Открыть полный словарь v6.18 ↗</a></section><section class="panel"><div id="dictionaryResults" class="dict-results" aria-live="polite">Загружаем словарь…</div></section>`}
-function entryHTML(e){return `<article class="dict-entry"><strong>${esc(e.word)}</strong>${e.match==='base'?'<span class="mode-pill"> Возможная основа слова</span>':e.match==='prefix'?'<span class="mode-pill"> Начало совпадает</span>':''}<p>${esc(e.translation)}</p>${e.senses?.length?`<details><summary>Значения и примеры</summary>${e.senses.map(x=>`<p class="mini">${esc([x.label,x.translation,x.example,x.exampleTranslation].filter(Boolean).join(' · '))}</p>`).join('')}</details>`:''}<button class="btn small" data-save-word="${esc(e.lang+'|'+e.word)}">${user.savedWords.some(x=>x.lang===e.lang&&x.word===e.word)?'✓ В моих словах':'+ В мои слова'}</button></article>`}
-async function updateDictionary(){const id=renderId;try{await ensureDictionary();if(route!=='dictionary'||renderId!==id)return;const el=$('#dictionaryResults');if(!el)return;const results=lookup(dictQuery,dictMode,50);el.innerHTML=dictQuery.trim()?(results.length?results.map(entryHTML).join(''):'<p class="muted">Слово не найдено. Проверьте написание или поищите начальную форму.</p>'):'<p class="muted">Введите слово на малайском или русском языке. Словарь работает локально после загрузки.</p>';bindSaveWords(el)}catch(e){if($('#dictionaryResults'))$('#dictionaryResults').textContent='Не удалось загрузить словарь. Проверьте подключение и попробуйте ещё раз.'}}
-async function showWord(word){const request=++wordRequest,d=$('#wordDialog');$('#wordContent').innerHTML=`<h2 id="wordTitle">${esc(word)}</h2><p class="muted">Ищем перевод…</p>`;if(!d.open)d.showModal();try{await ensureDictionary();if(request!==wordRequest||!d.open)return;const latin=(word.match(/[a-z]/gi)||[]).length,cyr=(word.match(/[а-яё]/gi)||[]).length,lang=latin>=cyr?'ms':'ru',found=lookup(word,lang,8);$('#wordContent').innerHTML=`<h2 id="wordTitle">${esc(word)}</h2><p class="mini muted">${lang==='ms'?'Малайский → русский':'Русский → малайский'}</p>${found.length?found.map(entryHTML).join(''):'<p>В словаре нет точного совпадения. Попробуйте другую форму слова или поиск в полном словаре.</p>'}<form id="wordSearchForm" class="sheet-form" style="margin-top:18px"><input class="input" id="wordSearch" aria-label="Уточнить слово" value="${esc(word)}"><button class="btn" type="submit">Искать</button></form>`;bindSaveWords($('#wordContent'));$('#wordSearchForm').onsubmit=e=>{e.preventDefault();showWord($('#wordSearch').value)}}catch{$('#wordContent').innerHTML=`<h2 id="wordTitle">${esc(word)}</h2><p>Не удалось загрузить словарь. Проверьте подключение.</p>`}}
-function bindSaveWords(el){el.querySelectorAll('[data-save-word]').forEach(b=>b.onclick=()=>{const [lang,...parts]=b.dataset.saveWord.split('|'),word=parts.join('|');if(user.savedWords.some(x=>x.lang===lang&&x.word===word)){toast('Слово уже в вашей подборке.');return}const e=(dictIndex[lang].get(norm(word))||[])[0];if(!e)return;user.savedWords.push({word:e.word,translation:e.translation,lang:e.lang});save();b.textContent='✓ В моих словах';toast('Слово добавлено в «Мои слова».')})}
+function entryHTML(entry, tappedWord=''){
+  const {word,translation,lang,match,senses}=entry;
+  const saveWord=tappedWord&&match==='base'?tappedWord:word;
+  const saveTranslation=saveWord===word?translation:'Основа «'+word+'»: '+translation;
+  const saved=user.savedWords.some(item=>item.lang===lang&&norm(item.word)===norm(saveWord)&&item.translation===saveTranslation);
+  const label=match==='base'?'Возможная основа слова':match==='prefix'?'Начало совпадает':match==='personal'?'Мои слова':'';
+  const details=senses?.length
+    ? `<details><summary>Значения и примеры</summary>${senses.map(sense=>`<p class="mini">${tokens([sense.label,sense.translation,sense.example,sense.exampleTranslation].filter(Boolean).join(' · '),true)}</p>`).join('')}</details>`
+    : '';
+  return `<article class="dict-entry"><strong>${esc(word)}</strong>${label?` <span class="mode-pill">${label}</span>`:''}<p>${esc(translation)}</p>${details}
+    <button type="button" class="btn small" data-save-word="${esc(saveWord)}" data-save-translation="${esc(saveTranslation)}" data-save-lang="${lang}" ${saved?'disabled':''}>${saved?'✓ В моих словах':'+ В мои слова'}</button>
+  </article>`;
+}
+async function updateDictionary(){const id=renderId;try{await ensureDictionary();if(route!=='dictionary'||renderId!==id)return;const el=$('#dictionaryResults');if(!el)return;const results=lookup(dictQuery,dictMode,50);el.innerHTML=dictQuery.trim()?(results.length?results.map(entry=>entryHTML(entry)).join(''):'<p class="muted">Слово не найдено. Проверьте написание или поищите начальную форму.</p>'):'<p class="muted">Введите слово на малайском или русском языке. Словарь работает локально после загрузки.</p>';bindSaveWords(el)}catch(e){if($('#dictionaryResults'))$('#dictionaryResults').textContent='Не удалось загрузить словарь. Проверьте подключение и попробуйте ещё раз.'}}
+async function showWord(value){
+  const word=String(value??'').trim().slice(0,100);
+  if(!word)return;
+  const request=++wordRequest;
+  const dialog=$('#wordDialog');
+  const content=$('#wordContent');
+  const title=`<h2 id="wordTitle">${esc(word)}</h2>`;
+  const lang=/[а-яё]/i.test(word)?'ru':'ms';
+  content.innerHTML=title+'<p class="muted" role="status">Ищем перевод…</p>';
+  if(!dialog.open)dialog.showModal();
+  let found=[];
+  let unavailable=false;
+  try{
+    await ensureDictionary();
+    found=lookup(word,lang,8);
+  }catch{
+    unavailable=true;
+  }
+  if(request!==wordRequest||!dialog.open)return;
+  const own=user.savedWords.filter(entry=>entry.lang===lang&&norm(entry.word)===norm(word));
+  const extra=own.filter(entry=>!found.some(hit=>hit.word===entry.word&&hit.translation===entry.translation));
+  found=[...extra.map(entry=>({...entry,match:'personal'})),...found];
+  const exact=found.some(entry=>entry.match==='exact');
+  const fallback=lang==='ms'&&!exact?`
+    <div class="controls"><button type="button" class="btn small" id="wordMachine">Перевести эту форму онлайн</button></div>
+    <p id="wordMachineStatus" class="mini muted" role="status"></p>
+    <div id="wordMachineResult"></div>
+    <details><summary>Добавить свой перевод</summary>
+      <form id="wordManual" class="sheet-form">
+        <input class="input" id="wordManualText" aria-label="Свой перевод" maxlength="500" required>
+        <button class="btn" type="submit">В мои слова</button>
+      </form>
+    </details>`:'';
+  const message=unavailable?'Словарь не загрузился.':found.length?'':'Такой формы нет в словаре.';
+  content.innerHTML=title+`<p class="mini muted">${lang==='ms'?'Малайский → русский':'Русский → малайский'}</p>
+    ${message?`<p>${message}</p>`:''}${found.map(entry=>entryHTML(entry,word)).join('')}${fallback}
+    <form id="wordSearchForm" class="sheet-form" style="margin-top:18px"><input class="input" id="wordSearch" aria-label="Уточнить слово" value="${esc(word)}"><button class="btn" type="submit">Искать</button></form>`;
+  bindSaveWords(content);
+  $('#wordSearchForm').onsubmit=event=>{event.preventDefault();showWord($('#wordSearch').value);};
+  if(fallback){
+    $('#wordMachine').onclick=()=>translateTappedWord(word,lang,request,dialog);
+    $('#wordManual').onsubmit=event=>{
+      event.preventDefault();
+      const input=$('#wordManualText');
+      const translation=input.value.trim();
+      if(!translation)return;
+      saveWordEntry({word,translation,lang});
+      input.value='';
+    };
+  }
+}
+
+async function translateTappedWord(word,lang,request,dialog){
+  const button=$('#wordMachine');
+  const status=$('#wordMachineStatus');
+  const result=$('#wordMachineResult');
+  button.disabled=true;
+  status.textContent='Запрашиваем перевод…';
+  try{
+    const query=new URLSearchParams({q:word,langpair:lang+'|ru'});
+    const response=await fetch('https://api.mymemory.translated.net/get?'+query,{signal:AbortSignal.timeout(12000)});
+    if(!response.ok)throw Error();
+    const data=await response.json();
+    const raw=data.responseData?.translatedText;
+    if(Number(data.responseStatus)!==200||typeof raw!=='string')throw Error();
+    const translation=new DOMParser().parseFromString(raw,'text/html').body.textContent.trim();
+    if(!/[а-яё]/i.test(translation))throw Error();
+    if(request!==wordRequest||!dialog.open)return;
+    status.textContent='Машинный перевод этой формы.';
+    result.innerHTML=entryHTML({word,translation,lang});
+    bindSaveWords(result);
+  }catch{
+    if(request===wordRequest&&dialog.open)status.textContent='Онлайн-перевод недоступен. Можно добавить свой перевод.';
+  }finally{
+    button.disabled=false;
+  }
+}
+
+function saveWordEntry(entry){
+  const exists=user.savedWords.some(item=>item.lang===entry.lang&&norm(item.word)===norm(entry.word)&&item.translation===entry.translation);
+  if(exists){toast('Этот перевод уже в «Моих словах».');return;}
+  user.savedWords.push(entry);
+  save();
+  toast('Слово добавлено в «Мои слова».');
+}
+
+function bindSaveWords(container){
+  for(const button of container.querySelectorAll('[data-word]'))button.onclick=()=>showWord(button.dataset.word);
+  for(const button of container.querySelectorAll('[data-save-word]')){
+    button.onclick=()=>{
+      const {saveWord:word,saveTranslation:translation,saveLang:lang}=button.dataset;
+      saveWordEntry({word,translation,lang});
+      button.textContent='✓ В моих словах';
+      button.disabled=true;
+    };
+  }
+}
 function savedView(){const words=user.savedWords;flashIndex=Math.min(flashIndex,Math.max(0,words.length-1));const e=words[flashIndex];return heading('Мои слова','Сохраняйте незнакомые слова при чтении и повторяйте их в карточках.')+(e?`<section class="panel"><div class="controls spread"><span class="mini muted">Карточка ${flashIndex+1} из ${words.length}</span>${button('Скачать слова','export-words')}</div><button class="panel vocab-flash" style="width:100%" data-action="flip-word"><strong>${esc(e.word)}</strong>${flashFlipped?`<p>${esc(e.translation)}</p>`:'<p class="mini muted">Нажмите, чтобы увидеть перевод</p>'}</button><div class="controls">${button('← Назад','word-prev')}${button('Перевернуть','flip-word',true)}${button('Далее →','word-next')}</div></section><section class="panel">${words.map((w,i)=>`<div class="word-list-row"><h3>${esc(w.word)}</h3><p>${esc(w.translation)}</p><button class="btn small" data-remove-word="${i}">Убрать из подборки</button></div>`).join('')}</section>`:'<div class="panel empty">Пока нет сохранённых слов. Откройте текст урока, нажмите на слово и выберите «В мои слова».</div>')}
 function frameView(news=false){const title=news?'Новости и перевод':'Военный перевод',section=news?'news':'home';return heading(title,news?'Свежие новости на малайском, собственные тексты и помощник перевода.':'Все материалы прежнего тренажёра: тексты, диалоги, темы, словарь, карточки, тесты и экзамен ГИА.')+`<div class="frame-toolbar"><p class="muted">${news?'Новости обновляются автоматически; черновик сохраняется в браузере.':'Ваши прежние черновики и результаты сохранены.'}</p><a class="btn small" href="military.html?section=${section}" target="_blank" rel="noopener">Развернуть ↗</a></div><div class="frame-wrap"><iframe class="trainer-frame" src="military.html?section=${section}" title="${title}" loading="lazy"></iframe></div>`}
 function progressView(){const done=Object.values(user.lessonDone).filter(Boolean).length,ex=Object.keys(user.done).filter(k=>user.done[k]&&k.startsWith('ex:')).length;return heading('Мой прогресс','Данные сохраняются в браузере на этом устройстве. Экспортируйте копию для переноса.')+`<div class="stats"><div class="stat"><strong>${done}</strong><span>уроков пройдено</span></div><div class="stat"><strong>${ex}</strong><span>упражнений выполнено</span></div><div class="stat"><strong>${Object.keys(user.listened).filter(k=>user.listened[k]).length}</strong><span>аудиозаписей прослушано</span></div><div class="stat"><strong>${user.savedWords.length}</strong><span>слов сохранено</span></div></div><section class="panel"><h2>Резервная копия</h2><div class="controls">${button('Экспортировать всё','export',true)}${button('Импортировать копию','import')}${button('Сбросить учебный курс','reset-course')}<input hidden type="file" id="importFile" accept=".json,application/json"></div><p class="mini muted">Экспорт включает учебник, личные слова, черновики и прежний тренажёр военного перевода. Копии прежнего тренажёра можно импортировать в его собственной вкладке.</p></section><section class="panel"><h2>Уроки</h2>${course.lessons.map(l=>`<div class="progress-row"><span>${esc(l.stage==='basic'?'Основной':l.stage==='intro'?'Вводный':'Введение')} · ${esc(lessonTitle(l))}<br><small class="muted">${user.lessonDone[l.id]?'✓ Пройдено':'Не отмечено'} · ${l.blocks.filter(b=>user.done['ex:'+b.id]).length} заданий выполнено</small></span><button class="btn small" data-lesson="${l.id}">Открыть</button></div>`).join('')}</section>`}
@@ -91,7 +230,7 @@ $('#closeWord').onclick=()=>$('#wordDialog').close();$('#wordDialog').addEventLi
 $('#theme').onclick=()=>{const theme=document.documentElement.dataset.theme==='light'?'dark':'light';document.documentElement.dataset.theme=theme;try{localStorage.setItem('malay-theme',theme)}catch{}};try{document.documentElement.dataset.theme=localStorage.getItem('malay-theme')||'dark'}catch{}
 window.addEventListener('hashchange',()=>{const next=location.hash.slice(1);if(routes.some(x=>x[0]===next)&&next!==route){route=next;window.MalayLevels?.visit(next,user,save);render();window.scrollTo(0,0)}});
 window.addEventListener('message',e=>{const frame=$('.trainer-frame');if(e.origin===location.origin&&e.source===frame?.contentWindow&&e.data?.type==='malay-word-lookup'&&typeof e.data.word==='string'&&e.data.word.length<100)showWord(e.data.word)});
-async function start(){try{const [c,a]=await Promise.all([fetch('assets/course.json').then(r=>{if(!r.ok)throw Error();return r.json()}),fetch('assets/audio.json').then(r=>{if(!r.ok)throw Error();return r.json()})]);course=c;audios=a;const initialWord=new URLSearchParams(location.search).get('word');if(initialWord){dictQuery=initialWord.slice(0,100);dictMode=/[а-яё]/i.test(dictQuery)?'ru':'ms';}if(!course.lessons.some(x=>x.id===lessonId))lessonId='intro-1';part=parts.some(p=>p[0]===user.part)?user.part:'read';const next=location.hash.slice(1);route=routes.some(x=>x[0]===next)?next:'home';window.MalayLevels?.visit(route,user,save);render()}catch{$('#app').innerHTML='<div class="panel"><h1>Не удалось загрузить курс</h1><p>Проверьте подключение и обновите страницу.</p><button class="btn primary" id="retryLoad">Попробовать ещё раз</button></div>';$('#retryLoad').onclick=start}}
+async function start(){try{const [c,a]=await Promise.all([fetch('assets/course.json').then(r=>{if(!r.ok)throw Error();return r.json()}),fetch('assets/audio.json').then(r=>{if(!r.ok)throw Error();return r.json()})]);course=c;audios=a;const initialWord=new URLSearchParams(location.search).get('word');if(initialWord){dictQuery=initialWord.slice(0,100);dictMode=/[а-яё]/i.test(dictQuery)?'ru':'ms';}if(!course.lessons.some(x=>x.id===lessonId))lessonId='intro-1';part=parts.some(p=>p[0]===user.part)?user.part:'read';const next=location.hash.slice(1);route=routes.some(x=>x[0]===next)?next:'home';window.MalayLevels?.visit(route,user,save);render();if(window.MalayLevels&&initialWord&&route==='dictionary')showWord(dictQuery)}catch{$('#app').innerHTML='<div class="panel"><h1>Не удалось загрузить курс</h1><p>Проверьте подключение и обновите страницу.</p><button class="btn primary" id="retryLoad">Попробовать ещё раз</button></div>';$('#retryLoad').onclick=start}}
 // Keep the selected section when moving between language editions.
 document.querySelectorAll('[data-language-link]').forEach(link=>link.addEventListener('click',()=>{link.href=link.getAttribute('href').split('#')[0]+location.hash}));
 start();

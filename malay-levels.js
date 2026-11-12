@@ -115,7 +115,7 @@ window.MalayLevels = (() => {
     </div>`;
   }
 
-  function quizPanel(esc) {
+  function quizPanel(esc, tokens) {
     const q = attempt;
     if (q.finished) {
       const passed = q.level !== 'B2' || q.score >= B2_PASS;
@@ -127,7 +127,7 @@ window.MalayLevels = (() => {
           ${q.level === 'B2' && passed ? routeButton('Перейти на C1–C2', 'c1-c2', true) : ''}
         </div>
         <details class="level-review"><summary>Разбор ответов</summary><ol>${q.questions.map((question, i) => `
-          <li><strong>${esc(question.prompt)}</strong><p>Ваш ответ: ${esc(q.answers[i])}<br>Верный ответ: ${esc(question.correct)}</p><p>${esc(question.explain)}</p></li>`).join('')}</ol></details>
+          <li><strong>${tokens(question.prompt, true)}</strong><p>Ваш ответ: ${tokens(q.answers[i], true)}<br>Верный ответ: ${tokens(question.correct, true)}</p><p>${tokens(question.explain, true)}</p>${question.audio ? `<p lang="ms">${tokens(data().audio[question.audio], true)}</p>` : ''}</li>`).join('')}</ol></details>
       </section>`;
     }
     const index = q.answers.length - (q.checked ? 1 : 0);
@@ -138,19 +138,27 @@ window.MalayLevels = (() => {
       </div>
       <progress value="${q.answers.length}" max="${q.questions.length}" aria-label="Выполнено заданий"></progress>
       ${current.topic ? `<p class="eyebrow">${esc(current.topic)}</p>` : ''}
-      ${q.level === 'B2' && index >= 10 && index <= 12 ? `<blockquote lang="ms">${esc(data().b2Text)}</blockquote>` : ''}
-      <h2>${esc(current.prompt)}</h2>
+      ${q.level === 'B2' && index >= 10 && index <= 12 ? `<blockquote lang="ms">${tokens(data().b2Text, true)}</blockquote>` : ''}
+      <h2>${tokens(current.prompt, true)}</h2>
       ${current.audio ? audioPlayer(current.audio, 'Озвученный учебный фрагмент') : ''}
+      <p class="mini muted">Нажмите на малайское слово, чтобы увидеть перевод.</p>
       <div class="level-choices">${current.choices.map((choice, i) => {
         const answerClass = q.checked ? (choice === current.correct ? ' level-correct' : choice === q.answers[index] ? ' level-wrong' : '') : '';
-        return `<button type="button" class="btn${answerClass}" data-choose-level="${i}" ${q.checked ? 'disabled' : ''}>${esc(choice)}</button>`;
+        const choose = `data-choose-level="${i}" ${q.checked ? 'disabled' : ''}`;
+        if (!/^[\p{Script=Latin}][\p{Script=Latin}\s\p{P}\p{N}]*$/u.test(choice)) {
+          return `<button type="button" class="btn${answerClass}" ${choose}>${esc(choice)}</button>`;
+        }
+        return `<div class="level-choice-row${answerClass}">
+          <span lang="ms">${tokens(choice, true)}</span>
+          <button type="button" class="btn small" aria-label="Выбрать: ${esc(choice)}" ${choose}>Выбрать</button>
+        </div>`;
       }).join('')}</div>
-      ${q.checked ? `<p role="status">${q.answers[index] === current.correct ? 'Верно. ' : 'Правильный ответ выделен. '}${esc(current.explain)}</p>
+      ${q.checked ? `${current.audio ? `<p lang="ms">${tokens(data().audio[current.audio], true)}</p>` : ''}<p role="status">${q.answers[index] === current.correct ? 'Верно. ' : 'Правильный ответ выделен. '}${tokens(current.explain, true)}</p>
         <button class="btn primary" type="button" data-next-level>${q.answers.length === q.questions.length ? 'Результат' : 'Следующее задание'}</button>` : ''}
     </section>`;
   }
 
-  function beginner(user, esc) {
+  function beginner(user, esc, tokens) {
     const state = progress(user);
     return `<div class="level-grid level-grid-two">${['A1', 'A2'].map((level, i) => `
       <article class="panel level-launch">
@@ -159,7 +167,7 @@ window.MalayLevels = (() => {
         ${state.results[level] ? `<p class="mini muted">Лучший результат: ${Number(state.results[level].best) || 0} из 6</p>` : ''}
         <button class="btn primary" type="button" data-start-level="${level}">Играть · ${level}</button>
       </article>`).join('')}</div>
-      ${attempt?.game ? quizPanel(esc) : ''}
+      ${attempt?.game ? quizPanel(esc, tokens) : ''}
       <section class="panel"><h2>Разговоры из учебника</h2><div class="controls">
         <button class="btn" type="button" data-lesson="intro-7">Знакомство</button>
         <button class="btn" type="button" data-lesson="basic-5">На рынке</button>
@@ -176,8 +184,8 @@ window.MalayLevels = (() => {
       <h2>Грамматика на примерах</h2><div class="level-grid level-grid-two">
         ${data().theory.map(([level, title, text, example, lesson]) => `
           <article class="panel level-theory">
-            <span class="level-range">${level}</span><h3>${esc(title)}</h3><p>${esc(text)}</p>
-            <p class="level-example">${tokens(example)}</p>
+            <span class="level-range">${level}</span><h3>${esc(title)}</h3><p>${tokens(text, true)}</p>
+            <p class="level-example">${tokens(example, true)}</p>
             <button class="btn small" type="button" data-lesson="${lesson}" data-open-part="theory">Раздел учебника</button>
           </article>`).join('')}
       </div>
@@ -195,7 +203,7 @@ window.MalayLevels = (() => {
         ${hasB2(user) ? routeButton('C1–C2 открыты', 'c1-c2') : ''}
       </div>
       <p class="mini muted">${state.results.B2 ? `Лучший результат B2: ${Number(state.results.B2.best) || 0} из 15. ` : ''}Это внутренний тест школы.</p>
-      ${attempt && !attempt.game ? quizPanel(esc) : ''}
+      ${attempt && !attempt.game ? quizPanel(esc, tokens) : ''}
     </section>`;
   }
 
@@ -250,7 +258,7 @@ window.MalayLevels = (() => {
       'Двусторонний': 'Переводите реплики по очереди на язык собеседника.',
       'Синхронный': 'Наденьте наушники, включите речь и начните переводить через несколько секунд. Не ставьте речь на паузу во время попытки.'
     }[task.mode];
-    const source = `<div class="read-text" ${task.mode === 'Двусторонний' ? '' : `lang="${task.lang}"`}>${tokens(task.text)}</div>`;
+    const source = `<div class="read-text" ${task.mode === 'Двусторонний' ? '' : `lang="${task.lang}"`}>${tokens(task.text, true)}</div>`;
     return `<article class="panel level-translation" data-task-id="${task.id}">
       <p class="eyebrow">${task.level} · ${direction}</p>
       <h3>${esc(task.mode)} · ${esc(task.topic)}</h3><p>${instruction}</p>
@@ -266,7 +274,7 @@ window.MalayLevels = (() => {
         <textarea class="answer" data-level-draft="${task.id}" rows="5">${esc(state.drafts[task.id] || '')}</textarea>
       </label>
       <details class="source-scan"><summary>Образец и критерии самопроверки</summary>
-        <p class="read-text">${esc(task.reference)}</p><p>${esc(task.check)}</p>
+        <p class="read-text">${tokens(task.reference, true)}</p><p>${tokens(task.check, true)}</p>
       </details>
       <label class="check"><input type="checkbox" data-level-done="${task.id}" ${state.done[task.id] ? 'checked' : ''}> Задание отработано</label>
     </article>`;
@@ -286,7 +294,7 @@ window.MalayLevels = (() => {
     }
     const stage = stageInfo.find(item => item.id === route);
     if (!stage) return null;
-    const content = stage.tone === 'a' ? beginner(user, esc)
+    const content = stage.tone === 'a' ? beginner(user, esc, tokens)
       : stage.tone === 'b' ? intermediate(user, esc, tokens)
         : advanced(user, esc, tokens);
     return `${levelNav(route, user)}<header class="level-stage-title level-${stage.tone}">
