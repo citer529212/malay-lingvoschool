@@ -234,6 +234,8 @@ def localize(s):
     return s.replace('.ms', '.id').replace('малайск', 'индонезийск').replace('Малайск', 'Индонезийск')
 
 html=(ROOT/'index.html').read_text()
+html=re.sub(r'<(?:link|script)[^>]+(?:malay-levels|malay-level-data)\.(?:js|css)[^>]*>(?:</script>)?', '', html)
+html=re.sub(r'school\.js\?v=[^"\s]+', 'school.js?v=20261105-languages', html)
 # Strip an existing switch when rebuilding.
 html=re.sub(r'<div class="header-actions">.*?</div>(?=</div><nav)', '<button type="button" id="theme" class="icon-btn" aria-label="Сменить цветовую тему">☼</button>', html)
 def switch(lang):
@@ -286,6 +288,7 @@ for n,(title,idtitle,text,ru,dialog) in enumerate(scenarios,1):
 # Card choices require unique terms.
 data['terms']=list({x['id']:x for x in data['terms']}.values())
 trainer=(ROOT/'military.html').read_text()
+trainer=re.sub(r'<script src="malay-levels\.js[^"]*"[^>]*></script>\n?', '', trainer)
 trainer=re.sub(r'(<script type="application/json" id="embedded-data">).*?(</script>)',lambda m:m[1]+json.dumps(data,ensure_ascii=False)+m[2],trainer,flags=re.S)
 trainer=localize(trainer).replace('news.json','indonesian-news.json').replace('Astro AWANI','ANTARA').replace('https://www.astroawani.com/','https://www.antaranews.com/').replace('military-words.js','indonesian-military-words.js')
 trainer=trainer.replace('Тексты из сборника;', 'Короткие авторские учебные примеры;')
